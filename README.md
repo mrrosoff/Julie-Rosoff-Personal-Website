@@ -1,6 +1,6 @@
-# React Static Site
+# Julie Rosoff's Personal Website
 
-### A GitHub Pages Starting Point
+### Family Concierge, Personal Assistant, and Lifestyle Manager
 
 ## About Project
 
@@ -8,23 +8,12 @@ This template repository is a great starting point for a github pages static web
 
 The template comes bundled with the following technology.
 
-### Client
-
-The site utilizes the React for the base code. Use `components/Layout.js` as a starting point for  your site.
-
-Styles can be used inline or within the SCSS file found under `src/assets/styles/global.scss`. The file is imported in `index.js`, if you wish to add more SCSS files, simply import them there.
-
-Replace elements of `static/templates/` with files to your liking. Image imports can be done directly, webpack will handle the loading.
-
-The site is bundled with several React packages for a quick development start. Material-UI is packaged for a styled 
-component library, and framer-motion is included if animations are required.
-
 ## Quick Start
 
 First, download the required npm packages.
 
 ```bash
-npm install --legacy-peer-deps
+npm install
 ```
 
 Then, run the appropriate command for your purposes.
