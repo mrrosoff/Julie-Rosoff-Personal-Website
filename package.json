@@ -1,0 +1,33 @@
+{
+    "name": "react-static-site",
+    "version": "1.0.0",
+    "description": "A Modern Web App Template",
+    "scripts": {
+        "start": "vite",
+        "build": "vite build"
+    },
+    "author": "Max Rosoff",
+    "license": "MIT",
+    "dependencies": {
+        "@emotion/react": "^11.10.0",
+        "@emotion/styled": "^11.10.0",
+        "@mui/icons-material": "^5.8.4",
+        "@mui/lab": "^5.0.0-alpha.93",
+        "@mui/material": "^5.9.3",
+        "axios": "^0.27.2",
+        "clsx": "latest",
+        "framer-motion": "^7.0.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^6.3.0"
+    },
+    "devDependencies": {
+        "@types/react": "^18.0.15",
+        "@types/react-dom": "^18.0.6",
+        "@vitejs/plugin-react": "^2.0.0",
+        "sass": "^1.54.3",
+        "typescript": "^4.7.4",
+        "vite": "^3.0.4",
+        "vite-plugin-electron": "^0.8.4"
+    }
+}
