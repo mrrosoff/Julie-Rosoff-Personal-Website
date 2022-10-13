@@ -23,7 +23,7 @@ const MobileLayout = () => {
                 alignContent={"center"}
             >
                 <Grid item>
-                    <Avatar alt="Max Rosoff" src={Profile} sx={{ width: 450, height: 450 }} />
+                    <Avatar alt="Max Rosoff" src={Profile} sx={{ width: 300, height: 300 }} />
                 </Grid>
                 <Grid item>
                     <Box
@@ -32,8 +32,8 @@ const MobileLayout = () => {
                         justifyContent={"center"}
                         alignItems={"center"}
                     >
-                        <Typography sx={{ fontSize: 65, fontWeight: 600 }}>Julie Rosoff</Typography>
-                        <Typography sx={{ fontSize: 20, fontWeight: 400 }}>
+                        <Typography sx={{ fontSize: 50, fontWeight: 600 }}>Julie Rosoff</Typography>
+                        <Typography sx={{ fontSize: 16, fontWeight: 400 }}>
                             Family Concierge, Personal Assistant, and Lifestyle Coach
                         </Typography>
                     </Box>
