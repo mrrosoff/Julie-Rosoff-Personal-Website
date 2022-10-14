@@ -20,7 +20,7 @@ const Home = () => {
                 <Typography variant={"h1"} color={"white"}>
                     Julie Rosoff
                 </Typography>
-                <Typography color={"white"} sx={{ fontSize: 28, fontWeight: 500 }}>
+                <Typography variant={"body1"}  color={"white"}>
                     Family Concierge, Personal Assistant, and Lifestyle Coach
                 </Typography>
                 <Box mt={2}>

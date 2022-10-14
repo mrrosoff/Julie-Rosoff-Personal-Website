@@ -17,7 +17,7 @@ const Services = () => {
                 <Typography variant={"h1"} color={"white"}>
                     Services
                 </Typography>
-                <Typography color={"white"} sx={{ fontSize: 22, fontWeight: 500 }}>
+                <Typography variant={"body1"} color={"white"}>
                     Blah blah blah blah
                 </Typography>
             </Box>
