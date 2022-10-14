@@ -21,7 +21,7 @@ const Schedule = () => {
             p={8}
         >
             <Box ml={5} display={"flex"} flexDirection={"column"}>
-                <Typography color={"white"} sx={{ fontSize: 150, fontWeight: 600, mb: -3 }}>
+                <Typography variant={"h1"} color={"white"}>
                     Contact Me
                 </Typography>
                 <Socials />
@@ -32,27 +32,57 @@ const Schedule = () => {
 };
 
 const ContactForm = () => {
-    const [value, setValue] = useState<DateTime | null>(null);
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
+    const [reasonForContact, setReasonForContact] = useState("");
+    const [date, setDate] = useState<DateTime | null>(null);
 
     return (
         <Box mt={8} sx={{ width: 800 }}>
             <Box>
-                <TextField fullWidth label={"Name"} />
+                <TextField
+                    fullWidth
+                    required
+                    label={"Name"}
+                    value={name}
+                    onChange={(event) => setName(event.target.value)}
+                />
             </Box>
             <Box mt={3}>
-                <TextField fullWidth label={"Email"} />
+                <TextField
+                    fullWidth
+                    required
+                    label={"Email"}
+                    value={email}
+                    onChange={(event) => setEmail(event.target.value)}
+                />
             </Box>
             <Box mt={3}>
-                <TextField fullWidth multiline rows={6} label={"Reason For Contact"} />
+                <TextField
+                    fullWidth
+                    label={"Phone Number"}
+                    value={phone}
+                    onChange={(event) => setPhone(event.target.value)}
+                />
+            </Box>
+            <Box mt={3}>
+                <TextField
+                    fullWidth
+                    multiline
+                    rows={6}
+                    required
+                    label={"Reason For Contact"}
+                    value={reasonForContact}
+                    onChange={(event) => setReasonForContact(event.target.value)}
+                />
             </Box>
             <Box mt={3}>
                 <DateTimePicker
-                    label="Time"
-                    value={value}
-                    onChange={(newValue) => {
-                        setValue(newValue);
-                    }}
-                    renderInput={(params) => <TextField {...params} />}
+                    label="Date And Time"
+                    value={date}
+                    onChange={(date) => setDate(date)}
+                    renderInput={(params) => <TextField fullWidth {...params} />}
                 />
             </Box>
             <Box mt={3}>

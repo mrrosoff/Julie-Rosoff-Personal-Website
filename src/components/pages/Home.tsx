@@ -17,7 +17,7 @@ const Home = () => {
             p={8}
         >
             <Box ml={20} display={"flex"} flexDirection={"column"} alignItems={"end"}>
-                <Typography color={"white"} sx={{ fontSize: 150, fontWeight: 600, mb: -3 }}>
+                <Typography variant={"h1"} color={"white"}>
                     Julie Rosoff
                 </Typography>
                 <Typography color={"white"} sx={{ fontSize: 28, fontWeight: 500 }}>
@@ -30,7 +30,5 @@ const Home = () => {
         </Box>
     );
 };
-
-
 
 export default Home;

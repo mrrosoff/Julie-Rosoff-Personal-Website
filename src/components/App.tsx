@@ -3,7 +3,7 @@ import { useMemo } from "react";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { createTheme, ThemeProvider, StyledEngineProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import { Hidden } from "@mui/material";
+import { Hidden, responsiveFontSizes } from "@mui/material";
 
 import { LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterLuxon } from "@mui/x-date-pickers/AdapterLuxon";
@@ -17,23 +17,35 @@ const App = () => {
     const darkMode = useMediaQuery("(prefers-color-scheme: dark)");
     const theme = useMemo(
         () =>
-            createTheme({
-                palette: {
-                    mode: darkMode ? "dark" : "light",
-                    primary: {
-                        main: "#FFFFFF"
-                    }
-                },
-                components: {
-                    MuiDatePicker: {
-                        styleOverrides: {
-                            root: {
-                                backgroundColor: "red"
+            responsiveFontSizes(
+                createTheme({
+                    palette: {
+                        mode: darkMode ? "dark" : "light",
+                        primary: {
+                            main: "#FFFFFF"
+                        }
+                    },
+                    typography: {
+                        h1: {
+                            fontSize: "10rem",
+                            fontWeight: 600
+                        },
+                        body1: {
+                            fontSize: "1.4rem",
+                            fontWeight: 500
+                        }
+                    },
+                    components: {
+                        MuiDatePicker: {
+                            styleOverrides: {
+                                root: {
+                                    backgroundColor: "red"
+                                }
                             }
                         }
                     }
-                }
-            }),
+                })
+            ),
         [darkMode]
     );
 

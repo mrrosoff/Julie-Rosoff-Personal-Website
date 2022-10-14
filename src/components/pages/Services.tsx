@@ -14,7 +14,7 @@ const Services = () => {
             p={8}
         >
             <Box ml={5} display={"flex"} flexDirection={"column"}>
-                <Typography color={"white"} sx={{ fontSize: 150, fontWeight: 600, mb: 4 }}>
+                <Typography variant={"h1"} color={"white"}>
                     Services
                 </Typography>
                 <Typography color={"white"} sx={{ fontSize: 22, fontWeight: 500 }}>

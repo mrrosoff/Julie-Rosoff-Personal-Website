@@ -14,10 +14,10 @@ const AboutMe = () => {
             p={8}
         >
             <Box ml={5} display={"flex"} flexDirection={"column"}>
-                <Typography color={"white"} sx={{ fontSize: 150, fontWeight: 600, mb: 4 }}>
+                <Typography variant={"h1"} color={"white"}>
                     About Me
                 </Typography>
-                <Typography color={"white"} sx={{ fontSize: 22, fontWeight: 500 }}>
+                <Typography variant={"body1"} color={"white"}>
                     Blah blah blah blah
                 </Typography>
             </Box>
