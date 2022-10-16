@@ -1,8 +1,11 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 
 import Socials from "../Socials";
 
 const Home = () => {
+    const theme = useTheme();
+    const isLarge = useMediaQuery(theme.breakpoints.down("lg"));
+
     return (
         <Box
             position={"absolute"}
@@ -16,12 +19,17 @@ const Home = () => {
             alignItems={"start"}
             p={8}
         >
-            <Box ml={20} display={"flex"} flexDirection={"column"} alignItems={"end"}>
+            <Box
+                ml={theme.spacing(isLarge ? 5 : 20)}
+                display={"flex"}
+                flexDirection={"column"}
+                alignItems={"end"}
+            >
                 <Typography variant={"h1"} color={"white"}>
                     Julie Rosoff
                 </Typography>
-                <Typography variant={"body1"}  color={"white"}>
-                    Family Concierge, Personal Assistant, and Lifestyle Coach
+                <Typography variant={"body1"} color={"white"}>
+                    Family Concierge and Lifestyle Manager
                 </Typography>
                 <Box mt={2}>
                     <Socials />

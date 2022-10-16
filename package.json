@@ -1,7 +1,7 @@
 {
     "name": "julie-rosoff-personal-website",
     "version": "1.0.0",
-    "description": "Family Concierge, Personal Assistant, and Lifestyle Manager",
+    "description": "Family Concierge and Lifestyle Manager",
     "scripts": {
         "start": "vite",
         "build": "vite build"

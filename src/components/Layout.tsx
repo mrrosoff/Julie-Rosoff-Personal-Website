@@ -50,7 +50,7 @@ const NavBarButton = (props: { text: string; path: string }) => {
 
     return (
         <Button onClick={() => navigate(props.path)} sx={{ p: 1, pl: 2, pr: 2, ml: 3 }}>
-            <Typography color={"white"} sx={{ fontSize: 20, fontWeight: 600 }}>
+            <Typography variant={"body2"} color={"white"}>
                 {props.text}
             </Typography>
         </Button>

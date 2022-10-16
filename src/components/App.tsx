@@ -25,16 +25,6 @@ const App = () => {
                             main: "#FFFFFF"
                         }
                     },
-                    typography: {
-                        h1: {
-                            fontSize: "10rem",
-                            fontWeight: 600
-                        },
-                        body1: {
-                            fontSize: "1.4rem",
-                            fontWeight: 500
-                        }
-                    },
                     components: {
                         MuiDatePicker: {
                             styleOverrides: {
@@ -48,6 +38,34 @@ const App = () => {
             ),
         [darkMode]
     );
+
+    theme.typography = {
+        ...theme.typography,
+        h1: {
+            [theme.breakpoints.up("lg")]: {
+                fontSize: "5rem"
+            },
+            [theme.breakpoints.up("xl")]: {
+                fontSize: "10rem"
+            },
+            fontSize: "4rem",
+            fontWeight: 600
+        },
+        body1: {
+            [theme.breakpoints.up("xl")]: {
+                fontSize: "1.4rem"
+            },
+            fontSize: "1rem",
+            fontWeight: 500
+        },
+        body2: {
+            [theme.breakpoints.up("xl")]: {
+                fontSize: "1.2rem"
+            },
+            fontSize: "1rem",
+            fontWeight: 600
+        }
+    };
 
     return (
         <LocalizationProvider dateAdapter={AdapterLuxon}>

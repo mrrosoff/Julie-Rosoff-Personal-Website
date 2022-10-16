@@ -1,6 +1,6 @@
 # Julie Rosoff's Personal Website
 
-### Family Concierge, Personal Assistant, and Lifestyle Manager
+### Family Concierge and Lifestyle Manager
 
 ## Quick Start
 
