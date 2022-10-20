@@ -53,7 +53,7 @@ const App = () => {
         },
         body1: {
             [theme.breakpoints.up("xl")]: {
-                fontSize: "1.4rem"
+                fontSize: "1.6rem"
             },
             fontSize: "1rem",
             fontWeight: 500
