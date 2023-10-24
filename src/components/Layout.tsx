@@ -35,12 +35,11 @@ const NavBar = () => {
             justifyContent={"end"}
             alignItems={"center"}
             p={4}
-            pr={5}
             zIndex={1}
         >
             <NavBarButton text={"Home"} path={""} />
-            <NavBarButton text={"About Me"} path={"aboutme"} />
-            <NavBarButton text={"Schedule A Consultation"} path={"schedule"} />
+            <NavBarButton text={"About"} path={"about"} />
+            <NavBarButton text={"Contact Me"} path={"contact"} />
         </Box>
     );
 };
@@ -49,7 +48,7 @@ const NavBarButton = (props: { text: string; path: string }) => {
     const navigate = useNavigate();
 
     return (
-        <Button onClick={() => navigate(props.path)} sx={{ p: 1, pl: 2, pr: 2, ml: 3 }}>
+        <Button onClick={() => navigate(props.path)} sx={{ p: 1, pl: 2, pr: 2, ml: 1 }}>
             <Typography variant={"body2"} color={"white"}>
                 {props.text}
             </Typography>

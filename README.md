@@ -1,6 +1,6 @@
 # Julie Rosoff's Personal Website
 
-### Family Concierge and Lifestyle Manager
+### Your Path to Mental Wellness
 
 ## Quick Start
 

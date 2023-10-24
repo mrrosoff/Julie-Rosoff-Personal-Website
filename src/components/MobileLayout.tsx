@@ -34,7 +34,7 @@ const MobileLayout = () => {
                     >
                         <Typography variant={"h1"}>Julie Rosoff</Typography>
                         <Typography variant={"body1"} sx={{ mt: 1 }}>
-                            Family Concierge and Lifestyle Manager
+                            Your Path to Mental Wellness
                         </Typography>
                     </Box>
                 </Grid>

@@ -22,7 +22,7 @@ const AboutMe = () => {
                     About Me
                 </Typography>
                 <Typography
-                    variant={"h6"}
+                    variant={"subtitle1"}
                     color={"white"}
                     sx={{ mt: 3, maxWidth: theme.spacing(width) }}
                 >
@@ -37,6 +37,27 @@ const AboutMe = () => {
                     tools necessary for positive growth and healing. In these difficult times, I am
                     here to help!
                 </Typography>
+                <Box mt={4}>
+                    <Typography variant={"h4"} color={"white"}>
+                        Specialties
+                    </Typography>
+                    <Typography
+                        variant={"subtitle1"}
+                        color={"white"}
+                        sx={{ mt: 3, maxWidth: theme.spacing(width) }}
+                    >
+                        Young Adults Developmental Transitions: to adulthood, college, maximizing
+                        achievement and success.
+                    </Typography>
+                    <Typography
+                        variant={"subtitle1"}
+                        color={"white"}
+                        sx={{ mt: 1, maxWidth: theme.spacing(width) }}
+                    >
+                        Substance abuse and Addiction, Depression, Anxiety, Grief, Loss,
+                        Trauma, Post Traumatic Stress Disorder (PTSD), Stress Management
+                    </Typography>
+                </Box>
             </Box>
         </Box>
     );

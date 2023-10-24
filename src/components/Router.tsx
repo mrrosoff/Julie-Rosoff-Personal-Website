@@ -6,7 +6,7 @@ import Layout from "./Layout";
 
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
-import Schedule from "./pages/Schedule";
+import Contact from "./pages/Contact";
 import NotFound from "./NotFound";
 
 const Router = () => {
@@ -16,8 +16,8 @@ const Router = () => {
                 <Route path={"/"} element={<Router404Inject />}>
                     <Route element={<Layout />}>
                         <Route index element={<Home />} />
-                        <Route path={"aboutme"} element={<AboutMe />} />
-                        <Route path={"schedule"} element={<Schedule />} />
+                        <Route path={"about"} element={<AboutMe />} />
+                        <Route path={"contact"} element={<Contact />} />
                         <Route path={"*"} element={<NotFound />} />
                     </Route>
                 </Route>

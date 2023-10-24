@@ -20,13 +20,13 @@ const Home = () => {
             p={8}
         >
             <Box
-                ml={theme.spacing(isLarge ? 5 : 20)}
+                ml={theme.spacing(isLarge ? 4 : 8)}
                 display={"flex"}
                 flexDirection={"column"}
                 alignItems={"end"}
             >
                 <Typography variant={"h1"} color={"white"}>
-                    Julie Rosoff
+                    Julie Rosoff Ph.D.
                 </Typography>
                 <Typography variant={"body1"} color={"white"}>
                     Your Path to Mental Wellness
