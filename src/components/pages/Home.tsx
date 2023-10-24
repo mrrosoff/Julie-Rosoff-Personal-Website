@@ -7,20 +7,9 @@ const Home = () => {
     const isLarge = useMediaQuery(theme.breakpoints.down("lg"));
 
     return (
-        <Box
-            position={"absolute"}
-            top={0}
-            left={0}
-            width={"100%"}
-            height={"100%"}
-            display={"flex"}
-            flexDirection={"column"}
-            justifyContent={"center"}
-            alignItems={"start"}
-            p={8}
-        >
+        <Box id={"home"} height={"100vh"} p={4} display={"flex"} alignItems={"center"}>
             <Box
-                ml={theme.spacing(isLarge ? 4 : 8)}
+                ml={theme.spacing(isLarge ? 5 : 11)}
                 display={"flex"}
                 flexDirection={"column"}
                 alignItems={"end"}
@@ -28,7 +17,7 @@ const Home = () => {
                 <Typography variant={"h1"} color={"white"}>
                     Julie Rosoff Ph.D.
                 </Typography>
-                <Typography variant={"body1"} color={"white"}>
+                <Typography variant={"subtitle1"} color={"white"} sx={{ mt: -0.8 }}>
                     Your Path to Mental Wellness
                 </Typography>
                 <Box mt={2}>

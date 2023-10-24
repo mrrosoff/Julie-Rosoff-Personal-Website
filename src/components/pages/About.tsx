@@ -1,25 +1,15 @@
 import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 
-const AboutMe = () => {
+const About = () => {
     const theme = useTheme();
     const isSmall = useMediaQuery(theme.breakpoints.down("xl"));
     const width = isSmall ? 80 : 100;
 
     return (
-        <Box
-            position={"absolute"}
-            top={0}
-            left={0}
-            width={"100%"}
-            height={"100%"}
-            display={"flex"}
-            flexDirection={"column"}
-            alignItems={"start"}
-            p={8}
-        >
+        <Box id={"about"} height={"100vh"} p={4} pt={6}>
             <Box ml={5} display={"flex"} flexDirection={"column"}>
                 <Typography variant={"h1"} color={"white"}>
-                    About Me
+                    About
                 </Typography>
                 <Typography
                     variant={"subtitle1"}
@@ -37,30 +27,9 @@ const AboutMe = () => {
                     tools necessary for positive growth and healing. In these difficult times, I am
                     here to help!
                 </Typography>
-                <Box mt={4}>
-                    <Typography variant={"h4"} color={"white"}>
-                        Specialties
-                    </Typography>
-                    <Typography
-                        variant={"subtitle1"}
-                        color={"white"}
-                        sx={{ mt: 3, maxWidth: theme.spacing(width) }}
-                    >
-                        Young Adults Developmental Transitions: to adulthood, college, maximizing
-                        achievement and success.
-                    </Typography>
-                    <Typography
-                        variant={"subtitle1"}
-                        color={"white"}
-                        sx={{ mt: 1, maxWidth: theme.spacing(width) }}
-                    >
-                        Substance abuse and Addiction, Depression, Anxiety, Grief, Loss,
-                        Trauma, Post Traumatic Stress Disorder (PTSD), Stress Management
-                    </Typography>
-                </Box>
             </Box>
         </Box>
     );
 };
 
-export default AboutMe;
+export default About;

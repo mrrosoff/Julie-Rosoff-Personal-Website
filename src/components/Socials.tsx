@@ -33,7 +33,7 @@ const SocialButton = (props: any) => {
             size={"large"}
             {...props}
         >
-            <Icon sx={{ fontSize: 32 }} />
+            <Icon sx={{ fontSize: 28 }} />
         </Button>
     );
 };

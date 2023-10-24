@@ -1,8 +1,12 @@
 import { Box, Button, Typography } from "@mui/material";
 
-import { Outlet, useNavigate } from "react-router-dom";
-
 import hero from "../assets/images/hero.jpg";
+
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Specialties from "./pages/Specialties";
+import Training from "./pages/Training";
+import Contact from "./pages/Contact";
 
 const Layout = () => {
     return (
@@ -19,7 +23,22 @@ const Layout = () => {
                 }}
             />
             <NavBar />
-            <Outlet />
+            <Box
+                position={"absolute"}
+                top={0}
+                left={0}
+                height={"100vh"}
+                sx={{
+                    overflowY: "scroll",
+                    "::-webkit-scrollbar": { display: "none" }
+                }}
+            >
+                <Home />
+                <About />
+                <Specialties />
+                <Training />
+                <Contact />
+            </Box>
         </Box>
     );
 };
@@ -37,18 +56,23 @@ const NavBar = () => {
             p={4}
             zIndex={1}
         >
-            <NavBarButton text={"Home"} path={""} />
+            <NavBarButton text={"Home"} path={"home"} />
             <NavBarButton text={"About"} path={"about"} />
-            <NavBarButton text={"Contact Me"} path={"contact"} />
+            <NavBarButton text={"Specialties"} path={"specialties"} />
+            <NavBarButton text={"Training"} path={"training"} />
+            <NavBarButton text={"Contact"} path={"contact"} />
         </Box>
     );
 };
 
 const NavBarButton = (props: { text: string; path: string }) => {
-    const navigate = useNavigate();
+    const element = document.getElementById(props.path);
 
     return (
-        <Button onClick={() => navigate(props.path)} sx={{ p: 1, pl: 2, pr: 2, ml: 1 }}>
+        <Button
+            onClick={() => element?.scrollIntoView({ behavior: "smooth" })}
+            sx={{ p: 1, pl: 2, pr: 2, ml: 1 }}
+        >
             <Typography variant={"body2"} color={"white"}>
                 {props.text}
             </Typography>

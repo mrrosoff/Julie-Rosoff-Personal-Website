@@ -5,8 +5,8 @@ import { createTheme, ThemeProvider, StyledEngineProvider } from "@mui/material/
 import CssBaseline from "@mui/material/CssBaseline";
 import { Hidden, responsiveFontSizes } from "@mui/material";
 
-import Router from "./Router";
 import MobileLayout from "./MobileLayout";
+import Layout from "./Layout";
 
 const App = () => {
     const darkMode = useMediaQuery("(prefers-color-scheme: dark)");
@@ -61,7 +61,7 @@ const App = () => {
                     <MobileLayout />
                 </Hidden>
                 <Hidden mdDown>
-                    <Router />
+                    <Layout />
                 </Hidden>
             </ThemeProvider>
         </StyledEngineProvider>

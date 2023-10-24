@@ -11,23 +11,13 @@ const Schedule = () => {
     const [googleCalendarLink, setGoogleCalendarLink] = useState<string | undefined>();
 
     return (
-        <Box
-            position={"absolute"}
-            top={0}
-            left={0}
-            width={"100%"}
-            height={"100%"}
-            display={"flex"}
-            flexDirection={"column"}
-            alignItems={"start"}
-            p={8}
-        >
+        <Box id={"contact"} height={"100vh"} p={4} pt={6} display={"flex"} flexDirection={"column"}>
             <Box ml={5} display={"flex"} flexDirection={"column"}>
                 <Typography variant={"h1"} color={"white"}>
                     Contact Me
                 </Typography>
 
-                <Typography variant={"subtitle1"} color={"white"} sx={{mt: 4}}>
+                <Typography variant={"subtitle1"} color={"white"} sx={{ mt: 4 }}>
                     Reach out via email with any questions!
                 </Typography>
                 <Box mt={2}>
