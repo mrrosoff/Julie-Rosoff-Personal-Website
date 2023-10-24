@@ -6,7 +6,6 @@ import Layout from "./Layout";
 
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
-import Services from "./pages/Services";
 import Schedule from "./pages/Schedule";
 import NotFound from "./NotFound";
 
@@ -18,7 +17,6 @@ const Router = () => {
                     <Route element={<Layout />}>
                         <Route index element={<Home />} />
                         <Route path={"aboutme"} element={<AboutMe />} />
-                        <Route path={"services"} element={<Services />} />
                         <Route path={"schedule"} element={<Schedule />} />
                         <Route path={"*"} element={<NotFound />} />
                     </Route>

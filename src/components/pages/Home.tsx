@@ -29,7 +29,7 @@ const Home = () => {
                     Julie Rosoff
                 </Typography>
                 <Typography variant={"body1"} color={"white"}>
-                    Family Concierge and Lifestyle Manager
+                    Your Path to Mental Wellness
                 </Typography>
                 <Box mt={2}>
                     <Socials />

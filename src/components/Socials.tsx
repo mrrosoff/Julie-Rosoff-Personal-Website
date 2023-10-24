@@ -1,14 +1,10 @@
 import { Box, Button } from "@mui/material";
 
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
 
 const Socials = () => {
     const socialList = [
-        { url: "https://www.linkedin.com/in/julie-rosoff", icon: LinkedInIcon },
-        { url: "https://www.facebook.com/julie.rosoff.9", icon: FacebookIcon },
-        { url: "https://www.instagram.com/julierosoff", icon: InstagramIcon }
+        { url: "https://www.linkedin.com/in/julie-rosoff", icon: LinkedInIcon }
     ];
 
     return (

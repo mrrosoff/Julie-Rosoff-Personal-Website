@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 import { Box, Button, TextField, Typography } from "@mui/material";
-import { DateTimePicker } from "@mui/x-date-pickers";
 
 import { DateTime } from "luxon";
 
@@ -10,18 +9,6 @@ import Socials from "../Socials";
 const Schedule = () => {
     const [hasSubmitted, setHasSubmitted] = useState(false);
     const [googleCalendarLink, setGoogleCalendarLink] = useState<string | undefined>();
-
-    const submitForm = (name: string, email: string, date: DateTime, reasonForContact: string) => {
-        setHasSubmitted(true);
-        const calendarEventTitle = "Consolutation With Julie Rosoff";
-        const details = `Hi there, my name is ${name} and I would like to schedule a consultation!%0AMy email is ${email}. Here are some details about what I would like to discuss:%0A%0A${reasonForContact}`;
-        const timeFormat = "yyyyMMdd'T'HHmmss";
-        const startTime = date.toFormat(timeFormat);
-        const endTime = date.plus({ hours: 2 }).toFormat(timeFormat);
-        setGoogleCalendarLink(
-            `https://calendar.google.com/calendar/u/0/r/eventedit?text=${calendarEventTitle}&dates=${startTime}/${endTime}&details=${details}&add=jdrosoff@gmail.com`
-        );
-    };
 
     return (
         <Box
@@ -39,12 +26,12 @@ const Schedule = () => {
                 <Typography variant={"h1"} color={"white"}>
                     Contact Me
                 </Typography>
-                <Socials />
-                {hasSubmitted ? (
-                    <ContactFormSubmitted googleCalendarLink={googleCalendarLink} />
-                ) : (
-                    <ContactForm submitForm={submitForm} />
-                )}
+                <Typography variant={"h6"} color={"white"} sx={{mt: 4}}>
+                    Reach out via email with any questions!
+                </Typography>
+                <Box mt={2}>
+                    <Socials />
+                </Box>
             </Box>
         </Box>
     );
@@ -94,14 +81,7 @@ const ContactForm = (props: { submitForm: Function }) => {
                     onChange={(event) => setReasonForContact(event.target.value)}
                 />
             </Box>
-            <Box mt={3}>
-                <DateTimePicker
-                    label="Date And Time"
-                    value={date}
-                    onChange={(date) => setDate(date)}
-                    renderInput={(params) => <TextField fullWidth required {...params} />}
-                />
-            </Box>
+
             <Box mt={3} alignSelf={"end"}>
                 <Button
                     variant={"outlined"}

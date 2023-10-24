@@ -38,8 +38,8 @@ const NavBar = () => {
             pr={5}
             zIndex={1}
         >
+            <NavBarButton text={"Home"} path={""} />
             <NavBarButton text={"About Me"} path={"aboutme"} />
-            <NavBarButton text={"Services"} path={"services"} />
             <NavBarButton text={"Schedule A Consultation"} path={"schedule"} />
         </Box>
     );

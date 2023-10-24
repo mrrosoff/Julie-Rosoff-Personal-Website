@@ -5,11 +5,6 @@ import { createTheme, ThemeProvider, StyledEngineProvider } from "@mui/material/
 import CssBaseline from "@mui/material/CssBaseline";
 import { Hidden, responsiveFontSizes } from "@mui/material";
 
-import { LocalizationProvider } from "@mui/x-date-pickers";
-import { AdapterLuxon } from "@mui/x-date-pickers/AdapterLuxon";
-
-import type {} from "@mui/x-date-pickers/themeAugmentation";
-
 import Router from "./Router";
 import MobileLayout from "./MobileLayout";
 
@@ -23,15 +18,6 @@ const App = () => {
                         mode: darkMode ? "dark" : "light",
                         primary: {
                             main: "#FFFFFF"
-                        }
-                    },
-                    components: {
-                        MuiDatePicker: {
-                            styleOverrides: {
-                                root: {
-                                    backgroundColor: "red"
-                                }
-                            }
                         }
                     }
                 })
@@ -68,19 +54,17 @@ const App = () => {
     };
 
     return (
-        <LocalizationProvider dateAdapter={AdapterLuxon}>
-            <StyledEngineProvider injectFirst>
-                <ThemeProvider theme={theme}>
-                    <CssBaseline />
-                    <Hidden mdUp>
-                        <MobileLayout />
-                    </Hidden>
-                    <Hidden mdDown>
-                        <Router />
-                    </Hidden>
-                </ThemeProvider>
-            </StyledEngineProvider>
-        </LocalizationProvider>
+        <StyledEngineProvider injectFirst>
+            <ThemeProvider theme={theme}>
+                <CssBaseline />
+                <Hidden mdUp>
+                    <MobileLayout />
+                </Hidden>
+                <Hidden mdDown>
+                    <Router />
+                </Hidden>
+            </ThemeProvider>
+        </StyledEngineProvider>
     );
 };
 
