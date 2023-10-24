@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Specialties from "./pages/Specialties";
 import Training from "./pages/Training";
 import Contact from "./pages/Contact";
+import { useCallback, useMemo } from "react";
 
 const Layout = () => {
     return (
@@ -66,13 +67,13 @@ const NavBar = () => {
 };
 
 const NavBarButton = (props: { text: string; path: string }) => {
-    const element = document.getElementById(props.path);
+    const onClick = useCallback(() => {
+        const element = document.getElementById(props.path);
+        element?.scrollIntoView({ behavior: "smooth" });
+    }, [document]);
 
     return (
-        <Button
-            onClick={() => element?.scrollIntoView({ behavior: "smooth" })}
-            sx={{ p: 1, pl: 2, pr: 2, ml: 1 }}
-        >
+        <Button onClick={onClick} sx={{ p: 1, pl: 2, pr: 2, ml: 1 }}>
             <Typography variant={"body2"} color={"white"}>
                 {props.text}
             </Typography>
