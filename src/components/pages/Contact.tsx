@@ -16,8 +16,7 @@ const Schedule = () => {
                 <Typography variant={"h1"} color={"white"}>
                     Contact Me
                 </Typography>
-
-                <Typography variant={"subtitle1"} color={"white"} sx={{ mt: 4 }}>
+                <Typography variant={"subtitle1"} color={"white"} sx={{ mt: 5 }}>
                     Reach out via email with any questions!
                 </Typography>
                 <Box mt={2}>

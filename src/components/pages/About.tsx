@@ -14,7 +14,7 @@ const About = () => {
                 <Typography
                     variant={"subtitle1"}
                     color={"white"}
-                    sx={{ mt: 3, maxWidth: theme.spacing(width) }}
+                    sx={{ mt: 5, maxWidth: theme.spacing(width) }}
                 >
                     I'm a dedicated and compassionate clinical psychologist committed to guiding you
                     on a journey toward mental well-being. With over 30 years of experience and a

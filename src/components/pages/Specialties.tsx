@@ -14,7 +14,7 @@ const Specialties = () => {
                 <Typography
                     variant={"subtitle1"}
                     color={"white"}
-                    sx={{ mt: 3, maxWidth: theme.spacing(width) }}
+                    sx={{ mt: 5, maxWidth: theme.spacing(width) }}
                 >
                     Young Adults Developmental Transitions: to adulthood, college, maximizing
                     achievement and success.
