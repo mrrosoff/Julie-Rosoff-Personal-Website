@@ -6,7 +6,7 @@ const About = () => {
     const width = isSmall ? 80 : 100;
 
     return (
-        <Box id={"about"} height={"100vh"} p={4} pt={6}>
+        <Box id={"about"} height={"95vh"} p={4} pt={8}>
             <Box ml={5} display={"flex"} flexDirection={"column"}>
                 <Typography variant={"h1"} color={"white"}>
                     About

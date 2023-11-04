@@ -1,25 +1,64 @@
 import { useState } from "react";
 
-import { Box, Button, TextField, Typography } from "@mui/material";
+import { Box, Button, TextField, Typography, useMediaQuery, useTheme } from "@mui/material";
 
 import { DateTime } from "luxon";
 
 import Socials from "../Socials";
 
 const Schedule = () => {
-    const [hasSubmitted, setHasSubmitted] = useState(false);
-    const [googleCalendarLink, setGoogleCalendarLink] = useState<string | undefined>();
+    const theme = useTheme();
+    const isSmall = useMediaQuery(theme.breakpoints.down("xl"));
+    const width = isSmall ? 80 : 100;
 
     return (
-        <Box id={"contact"} height={"100vh"} p={4} pt={6} display={"flex"} flexDirection={"column"}>
+        <Box id={"contact"} height={"95vh"} p={4} pt={8} display={"flex"} flexDirection={"column"}>
             <Box ml={5} display={"flex"} flexDirection={"column"}>
                 <Typography variant={"h1"} color={"white"}>
                     Contact Me
                 </Typography>
-                <Typography variant={"subtitle1"} color={"white"} sx={{ mt: 5 }}>
-                    Reach out via email with any questions!
+                <Typography color={"white"} mt={5} variant={"h6"} fontWeight={600}>
+                    Billing
                 </Typography>
-                <Box mt={2}>
+                <Typography
+                    variant={"subtitle1"}
+                    color={"white"}
+                    sx={{ mt: 1, maxWidth: theme.spacing(width) }}
+                >
+                    Initial Individual Session, our first 50 minutes: $200.00
+                </Typography>
+                <Typography
+                    variant={"subtitle1"}
+                    color={"white"}
+                    sx={{ maxWidth: theme.spacing(width) }}
+                >
+                    Individual 50 minute session: $150.00
+                </Typography>
+                <Typography
+                    variant={"subtitle1"}
+                    color={"white"}
+                    sx={{ maxWidth: theme.spacing(width) }}
+                >
+                    *If cost is a concern, please inquire for a reduced sliding scale fee.
+                </Typography>
+                <Typography
+                    variant={"subtitle1"}
+                    color={"white"}
+                    sx={{ maxWidth: theme.spacing(width) }}
+                >
+                    I do not accept insurance. I do accept cash or credit card. I can provide a
+                    superbill for you to submit to your insurance for reimbursement of
+                    out-of-network psychotherapy.
+                </Typography>
+                <Typography
+                    variant={"subtitle1"}
+                    color={"white"}
+                    sx={{ mt: 5, maxWidth: theme.spacing(width) }}
+                >
+                    TELEHEALTH services provided. I hope to connect with you soon! Reach out via
+                    email with any questions!
+                </Typography>
+                <Box mt={3} ml={-2}>
                     <Socials />
                 </Box>
             </Box>

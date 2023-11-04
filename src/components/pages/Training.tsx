@@ -6,7 +6,7 @@ const Training = () => {
     const width = isSmall ? 80 : 100;
 
     return (
-        <Box id={"training"} height={"140vh"} p={4} pt={6} display={"flex"}>
+        <Box id={"training"} height={"150vh"} p={4} pt={8} display={"flex"}>
             <Box ml={5} display={"flex"} flexDirection={"column"}>
                 <Typography variant={"h1"} color={"white"}>
                     Training
@@ -97,8 +97,8 @@ const Training = () => {
                     color={"white"}
                     sx={{ maxWidth: theme.spacing(width) }}
                 >
-                    Practicum: Vista San Diego Center, Residential Treatment Center for
-                    Adolescents, San Diego
+                    Practicum: Vista San Diego Center, Residential Treatment Center for Adolescents,
+                    San Diego
                 </Typography>
                 <Typography
                     variant={"h6"}
@@ -114,6 +114,22 @@ const Training = () => {
                     sx={{ maxWidth: theme.spacing(width) }}
                 >
                     San Diego Psychological Association
+                </Typography>
+                <Typography
+                    variant={"h6"}
+                    fontWeight={600}
+                    color={"white"}
+                    sx={{ mt: 3, maxWidth: theme.spacing(width) }}
+                >
+                    Adopt a Family Foundation Committee Member
+                </Typography>
+                <Typography
+                    variant={"subtitle1"}
+                    color={"white"}
+                    sx={{ maxWidth: theme.spacing(width) }}
+                >
+                    Fundraising and Consultation for emotional, mental, and physical therapeutic
+                    services for victims of terror in Israel
                 </Typography>
                 <Typography
                     variant={"h6"}

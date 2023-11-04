@@ -23,7 +23,7 @@ const MobileLayout = () => {
                 alignContent={"center"}
             >
                 <Grid item>
-                    <Avatar alt="Max Rosoff" src={Profile} sx={{ width: 280, height: 280 }} />
+                    <Avatar alt="Julie Rosoff" src={Profile} sx={{ width: 280, height: 280 }} />
                 </Grid>
                 <Grid item>
                     <Box

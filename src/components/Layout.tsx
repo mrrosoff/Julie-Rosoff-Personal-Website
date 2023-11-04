@@ -14,7 +14,7 @@ const Layout = () => {
         <Box width={"100vw"} height={"100vh"}>
             <div
                 style={{
-                    backgroundImage: `linear-gradient(to left, transparent, 50%, black), url(${hero})`,
+                    backgroundImage: `linear-gradient(285deg, transparent, rgba(0,0,0,0.75) 70%, black), url(${hero})`,
                     height: "100vh",
                     minHeight: "100%",
                     backgroundPosition: "top",
@@ -29,6 +29,7 @@ const Layout = () => {
                 top={0}
                 left={0}
                 height={"100vh"}
+                width={"100vw"}
                 sx={{
                     overflowY: "scroll",
                     "::-webkit-scrollbar": { display: "none" }
