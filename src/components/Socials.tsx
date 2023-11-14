@@ -1,13 +1,18 @@
 import { Box, Button } from "@mui/material";
 
+import BookIcon from "@mui/icons-material/Book";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 
 const Socials = () => {
     const socialList = [
-        { url: "tel:858-414-6423", icon: LocalPhoneIcon },
+        { url: "tel:858-330-4149", icon: LocalPhoneIcon },
         { url: "mailto:drjulierosoff@gmail.com", icon: EmailIcon },
+        {
+            url: "https://www.psychologytoday.com/us/therapists/julie-d-rosoff-san-diego-ca/1218038",
+            icon: BookIcon
+        },
         { url: "https://www.linkedin.com/in/julie-rosoff", icon: LinkedInIcon }
     ];
 
