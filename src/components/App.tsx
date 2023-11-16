@@ -3,9 +3,8 @@ import { useMemo } from "react";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { createTheme, ThemeProvider, StyledEngineProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import { Hidden, responsiveFontSizes } from "@mui/material";
+import { responsiveFontSizes } from "@mui/material";
 
-import MobileLayout from "./MobileLayout";
 import Layout from "./Layout";
 
 const App = () => {
@@ -57,12 +56,7 @@ const App = () => {
         <StyledEngineProvider injectFirst>
             <ThemeProvider theme={theme}>
                 <CssBaseline />
-                <Hidden mdUp>
-                    <MobileLayout />
-                </Hidden>
-                <Hidden mdDown>
-                    <Layout />
-                </Hidden>
+                <Layout />
             </ThemeProvider>
         </StyledEngineProvider>
     );

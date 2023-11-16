@@ -1,4 +1,6 @@
-import { Box, Button, Typography } from "@mui/material";
+import { useCallback } from "react";
+
+import { Box, Button, Typography, useMediaQuery, useTheme } from "@mui/material";
 
 import hero from "../assets/images/hero.jpg";
 
@@ -7,9 +9,11 @@ import About from "./pages/About";
 import Specialties from "./pages/Specialties";
 import Training from "./pages/Training";
 import Contact from "./pages/Contact";
-import { useCallback, useMemo } from "react";
 
 const Layout = () => {
+    const theme = useTheme();
+    const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+
     return (
         <Box width={"100vw"} height={"100vh"}>
             <div
@@ -23,7 +27,7 @@ const Layout = () => {
                     position: "relative"
                 }}
             />
-            <NavBar />
+            {isSmall ? null : <NavBar />}
             <Box
                 position={"absolute"}
                 top={0}

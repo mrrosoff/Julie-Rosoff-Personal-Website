@@ -2,19 +2,27 @@ import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 
 const About = () => {
     const theme = useTheme();
-    const isSmall = useMediaQuery(theme.breakpoints.down("xl"));
-    const width = isSmall ? 80 : 100;
+    const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+    const isMedium = useMediaQuery(theme.breakpoints.down("md"));
 
     return (
-        <Box id={"about"} height={"95vh"} p={4} pt={8}>
-            <Box ml={5} display={"flex"} flexDirection={"column"}>
-                <Typography variant={"h1"} color={"white"}>
+        <Box
+            id={"about"}
+            height={"95vh"}
+            p={4}
+            pt={8}
+            display={"flex"}
+            alignItems={isMedium ? "center" : "inherit"}
+        >
+            <Box ml={isSmall ? 0 : 5} display={"flex"} flexDirection={"column"}>
+                <Typography variant={"h1"} color={"white"} align={isSmall ? "center" : "inherit"}>
                     About
                 </Typography>
                 <Typography
                     variant={"subtitle1"}
                     color={"white"}
-                    sx={{ mt: 5, maxWidth: theme.spacing(width) }}
+                    sx={{ mt: 5, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    align={isSmall ? "center" : "inherit"}
                 >
                     I'm a dedicated and compassionate clinical psychologist committed to guiding you
                     on a journey toward mental well-being. With over 30 years of experience and a

@@ -2,13 +2,20 @@ import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 
 const Training = () => {
     const theme = useTheme();
-    const isSmall = useMediaQuery(theme.breakpoints.down("xl"));
-    const width = isSmall ? 80 : 100;
+    const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+    const isMedium = useMediaQuery(theme.breakpoints.down("md"));
 
     return (
-        <Box id={"training"} height={"150vh"} p={4} pt={8} display={"flex"}>
-            <Box ml={5} display={"flex"} flexDirection={"column"}>
-                <Typography variant={"h1"} color={"white"}>
+        <Box
+            id={"training"}
+            height={"150vh"}
+            p={4}
+            pt={8}
+            display={"flex"}
+            alignItems={isMedium ? "center" : "inherit"}
+        >
+            <Box ml={isSmall ? 0 : 5} display={"flex"} flexDirection={"column"}>
+                <Typography variant={"h1"} color={"white"} align={isSmall ? "center" : "inherit"}>
                     Training
                 </Typography>
                 <Typography
@@ -16,14 +23,16 @@ const Training = () => {
                     variant={"h6"}
                     fontWeight={600}
                     color={"white"}
-                    sx={{ maxWidth: theme.spacing(width) }}
+                    sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    align={isSmall ? "center" : "inherit"}
                 >
                     Licensure
                 </Typography>
                 <Typography
                     variant={"subtitle1"}
                     color={"white"}
-                    sx={{ maxWidth: theme.spacing(width) }}
+                    sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    align={isSmall ? "center" : "inherit"}
                 >
                     California Board of Psychology License: PSY15894, first licensed 1998
                 </Typography>
@@ -31,14 +40,16 @@ const Training = () => {
                     variant={"h6"}
                     fontWeight={600}
                     color={"white"}
-                    sx={{ mt: 3, maxWidth: theme.spacing(width) }}
+                    sx={{ mt: 3, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    align={isSmall ? "center" : "inherit"}
                 >
                     Education
                 </Typography>
                 <Typography
                     variant={"subtitle1"}
                     color={"white"}
-                    sx={{ maxWidth: theme.spacing(width) }}
+                    sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    align={isSmall ? "center" : "inherit"}
                 >
                     Doctor of Philosophy in Clinical Psychology with an emphasis in Child and Family
                     California School of Professional Psychology San Diego 1995 Approved by the
@@ -47,7 +58,8 @@ const Training = () => {
                 <Typography
                     variant={"subtitle1"}
                     color={"white"}
-                    sx={{ maxWidth: theme.spacing(width) }}
+                    sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    align={isSmall ? "center" : "inherit"}
                 >
                     Master of Arts in Psychology California School of Professional Psychology San
                     Diego 1991 Approved by the American Psychological Association
@@ -55,7 +67,8 @@ const Training = () => {
                 <Typography
                     variant={"subtitle1"}
                     color={"white"}
-                    sx={{ maxWidth: theme.spacing(width) }}
+                    sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    align={isSmall ? "center" : "inherit"}
                 >
                     Bachelor of Arts in Psychology and Political Science University of Southern
                     California 1988
@@ -64,14 +77,16 @@ const Training = () => {
                     variant={"h6"}
                     fontWeight={600}
                     color={"white"}
-                    sx={{ mt: 3, maxWidth: theme.spacing(width) }}
+                    sx={{ mt: 3, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    align={isSmall ? "center" : "inherit"}
                 >
                     Professional Training
                 </Typography>
                 <Typography
                     variant={"subtitle1"}
                     color={"white"}
-                    sx={{ maxWidth: theme.spacing(width) }}
+                    sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    align={isSmall ? "center" : "inherit"}
                 >
                     Post Doctoral Internships: Changes Chemical Dependency Intensive Outpatient
                     Program, Sharp Mesa Vista Behavioral Health Center, San Diego Approved by the
@@ -80,14 +95,16 @@ const Training = () => {
                 <Typography
                     variant={"subtitle1"}
                     color={"white"}
-                    sx={{ maxWidth: theme.spacing(width) }}
+                    sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    align={isSmall ? "center" : "inherit"}
                 >
                     Internship: Alvarado Parkway Institute, La Mesa
                 </Typography>
                 <Typography
                     variant={"subtitle1"}
                     color={"white"}
-                    sx={{ maxWidth: theme.spacing(width) }}
+                    sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    align={isSmall ? "center" : "inherit"}
                 >
                     Internship: Child Sexual Abuse Treatment Center At Child Protective Services San
                     Diego
@@ -95,7 +112,8 @@ const Training = () => {
                 <Typography
                     variant={"subtitle1"}
                     color={"white"}
-                    sx={{ maxWidth: theme.spacing(width) }}
+                    sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    align={isSmall ? "center" : "inherit"}
                 >
                     Practicum: Vista San Diego Center, Residential Treatment Center for Adolescents,
                     San Diego
@@ -104,14 +122,16 @@ const Training = () => {
                     variant={"h6"}
                     fontWeight={600}
                     color={"white"}
-                    sx={{ mt: 3, maxWidth: theme.spacing(width) }}
+                    sx={{ mt: 3, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    align={isSmall ? "center" : "inherit"}
                 >
                     Professional Affiliations
                 </Typography>
                 <Typography
                     variant={"subtitle1"}
                     color={"white"}
-                    sx={{ maxWidth: theme.spacing(width) }}
+                    sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    align={isSmall ? "center" : "inherit"}
                 >
                     San Diego Psychological Association
                 </Typography>
@@ -119,14 +139,16 @@ const Training = () => {
                     variant={"h6"}
                     fontWeight={600}
                     color={"white"}
-                    sx={{ mt: 3, maxWidth: theme.spacing(width) }}
+                    sx={{ mt: 3, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    align={isSmall ? "center" : "inherit"}
                 >
                     Adopt a Family Foundation Committee Member
                 </Typography>
                 <Typography
                     variant={"subtitle1"}
                     color={"white"}
-                    sx={{ maxWidth: theme.spacing(width) }}
+                    sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    align={isSmall ? "center" : "inherit"}
                 >
                     Fundraising and Consultation for emotional, mental, and physical therapeutic
                     services for victims of terror in Israel
@@ -135,14 +157,16 @@ const Training = () => {
                     variant={"h6"}
                     fontWeight={600}
                     color={"white"}
-                    sx={{ mt: 3, maxWidth: theme.spacing(width) }}
+                    sx={{ mt: 3, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    align={isSmall ? "center" : "inherit"}
                 >
                     Interests
                 </Typography>
                 <Typography
                     variant={"subtitle1"}
                     color={"white"}
-                    sx={{ maxWidth: theme.spacing(width) }}
+                    sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    align={isSmall ? "center" : "inherit"}
                 >
                     Gardening, hiking, traveling the world, learning about and enjoying different
                     cultures, cooking and baking, beach days with my labrador retriever, Link.

@@ -4,20 +4,21 @@ import Socials from "../Socials";
 
 const Home = () => {
     const theme = useTheme();
-    const isLarge = useMediaQuery(theme.breakpoints.down("lg"));
+    const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+    const isMedium = useMediaQuery(theme.breakpoints.down("md"));
 
     return (
         <Box id={"home"} height={"100vh"} p={4} display={"flex"} alignItems={"center"}>
             <Box
-                ml={theme.spacing(isLarge ? 5 : 11)}
+                ml={theme.spacing(isSmall ? 0 : 11)}
                 display={"flex"}
                 flexDirection={"column"}
-                alignItems={"end"}
+                alignItems={isMedium ? "center" : "end"}
             >
-                <Typography variant={"h1"} color={"white"}>
+                <Typography variant={"h1"} color={"white"} align={isMedium ? "center" : "inherit"}>
                     Julie Rosoff Ph.D.
                 </Typography>
-                <Typography variant={"subtitle1"} color={"white"} sx={{ mt: -0.8 }}>
+                <Typography variant={"subtitle1"} color={"white"} sx={{ mt: isMedium ? 1 : -0.8 }}>
                     Your Path to Mental Wellness
                 </Typography>
                 <Box mt={2}>

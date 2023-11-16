@@ -1,4 +1,4 @@
-import { Box, Button } from "@mui/material";
+import { Box, Button, useMediaQuery, useTheme } from "@mui/material";
 
 import BookIcon from "@mui/icons-material/Book";
 import EmailIcon from "@mui/icons-material/Email";
@@ -6,6 +6,9 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 
 const Socials = () => {
+    const theme = useTheme();
+    const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+
     const socialList = [
         { url: "tel:858-330-4149", icon: LocalPhoneIcon },
         { url: "mailto:drjulierosoff@gmail.com", icon: EmailIcon },
@@ -17,7 +20,12 @@ const Socials = () => {
     ];
 
     return (
-        <Box mr={-2.5} display={"flex"} flexWrap={"wrap"}>
+        <Box
+            mr={isSmall ? 0 : -2.5}
+            display={"flex"}
+            flexWrap={"wrap"}
+            justifyContent={isSmall ? "center" : "inherit"}
+        >
             {socialList.map((socialDetails, index) => (
                 <Box key={index} mr={1}>
                     <SocialButton href={socialDetails.url} icon={socialDetails.icon} />
