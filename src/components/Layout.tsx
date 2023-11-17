@@ -3,6 +3,7 @@ import { useCallback } from "react";
 import { Box, Button, Typography, useMediaQuery, useTheme } from "@mui/material";
 
 import hero from "../assets/images/hero.jpg";
+import portrait from "../assets/images/portrait.jpg";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -14,11 +15,15 @@ const Layout = () => {
     const theme = useTheme();
     const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
 
+    const image = isSmall ? portrait : hero;
+
     return (
         <Box width={"100vw"} height={"100vh"}>
             <div
                 style={{
-                    backgroundImage: `linear-gradient(285deg, transparent, rgba(0,0,0,0.75) 70%, black), url(${hero})`,
+                    backgroundImage: `linear-gradient(285deg, transparent, rgba(0,0,0,${
+                        isSmall ? "0.5" : "0.75"
+                    }) 70%, black), url(${image})`,
                     height: "100vh",
                     minHeight: "100%",
                     backgroundPosition: "top",

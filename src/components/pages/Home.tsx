@@ -10,7 +10,8 @@ const Home = () => {
     return (
         <Box id={"home"} height={"100vh"} p={4} display={"flex"} alignItems={"center"}>
             <Box
-                ml={theme.spacing(isSmall ? 0 : 11)}
+                ml={theme.spacing(isSmall ? 0 : 12)}
+                pt={"40vh"}
                 display={"flex"}
                 flexDirection={"column"}
                 alignItems={isMedium ? "center" : "end"}

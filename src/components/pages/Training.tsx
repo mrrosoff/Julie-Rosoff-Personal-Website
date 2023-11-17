@@ -8,7 +8,7 @@ const Training = () => {
     return (
         <Box
             id={"training"}
-            height={"150vh"}
+            height={isSmall ? "280vh" : "150vh"}
             p={4}
             pt={8}
             display={"flex"}
