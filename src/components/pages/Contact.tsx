@@ -14,7 +14,7 @@ const Contact = () => {
     return (
         <Box
             id={"contact"}
-            height={"95vh"}
+            height={isSmall ? "120vh" : "95vh"}
             p={4}
             pt={8}
             display={"flex"}

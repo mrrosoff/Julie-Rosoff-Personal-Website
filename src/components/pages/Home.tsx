@@ -11,7 +11,7 @@ const Home = () => {
         <Box id={"home"} height={"100vh"} p={4} display={"flex"} alignItems={"center"}>
             <Box
                 ml={theme.spacing(isSmall ? 0 : 12)}
-                pt={"40vh"}
+                pt={"35vh"}
                 display={"flex"}
                 flexDirection={"column"}
                 alignItems={isMedium ? "center" : "end"}
@@ -22,9 +22,11 @@ const Home = () => {
                 <Typography variant={"subtitle1"} color={"white"} sx={{ mt: isMedium ? 1 : -0.8 }}>
                     Your Path to Mental Wellness
                 </Typography>
-                <Box mt={2}>
-                    <Socials />
-                </Box>
+                {!isSmall && (
+                    <Box mt={2}>
+                        <Socials />
+                    </Box>
+                )}
             </Box>
         </Box>
     );
