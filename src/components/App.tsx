@@ -49,7 +49,12 @@ const App = () => {
             },
             fontSize: "1rem",
             fontWeight: 600
-        }
+        },
+        // subtitle1: {
+        //     [theme.breakpoints.up("lg")]: {
+        //         fontSize: "1.25rem"
+        //     }
+        // }
     };
 
     return (

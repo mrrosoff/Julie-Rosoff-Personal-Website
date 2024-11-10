@@ -29,11 +29,20 @@ const About = () => {
                     genuine passion for helping individuals navigate life's challenges, I offer a
                     safe and nurturing space for exploring thoughts, feelings, and behaviors. My
                     approach is rooted in empathy and evidence-based therapies, ensuring that you
-                    receive the highest level of care tailored to your unique needs. Whether you're
-                    seeking support for anxiety, depression, relationship issues, or personal
-                    self-development, I am here to collaborate with you, providing the guidance and
-                    tools necessary for positive growth and healing. In these difficult times, I am
-                    here to help!
+                    receive the highest level of care tailored to your unique needs.
+                </Typography>
+                <Typography
+                    variant={"subtitle1"}
+                    color={"white"}
+                    sx={{ mt: 5, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    align={isSmall ? "center" : "inherit"}
+                >
+                    Whether you're seeking support for anxiety, depression, relationship issues, or
+                    personal self-development, I am here to collaborate with you, providing the
+                    guidance and tools necessary for positive growth and healing. Raising 3 young
+                    children after the sudden loss of my husband enables me to uniquely understand
+                    grief, loss and resilience, trauma, single motherhood, and finding fulfillment
+                    and joy. In these difficult times, I am here to help!
                 </Typography>
             </Box>
         </Box>

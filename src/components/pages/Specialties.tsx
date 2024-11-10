@@ -24,24 +24,112 @@ const Specialties = () => {
                     sx={{ mt: 5, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
                 >
-                    Dr. Rosoff specializes in treating adolescents and young adults with the
-                    following issues: Developmental transitions to adulthood, college, maximizing
-                    achievement and success Substance abuse and Addiction, Depression, Anxiety,
-                    Grief, Loss, Trauma, Post Traumatic Stress Disorder (PTSD), Stress Management,
-                    Relationship issues. Raising 3 young children after the sudden loss of my
-                    husband enables me to deeply understand grief, loss and resilience, the fears
-                    and joys of single motherhood and fostering growth.
+                    Dr. Rosoff specializes in treating young adults with the following issues:
+                </Typography>
+                <ul>
+                    <li>
+                        <Typography
+                            variant={"subtitle1"}
+                            color={"white"}
+                            align={isSmall ? "center" : "inherit"}
+                        >
+                            Developmental transitions throughout the lifespan
+                        </Typography>
+                    </li>
+                    <li>
+                        <Typography
+                            variant={"subtitle1"}
+                            color={"white"}
+                            align={isSmall ? "center" : "inherit"}
+                        >
+                            Adjustment to college and adulthood
+                        </Typography>
+                    </li>
+                    <li>
+                        <Typography
+                            variant={"subtitle1"}
+                            color={"white"}
+                            align={isSmall ? "center" : "inherit"}
+                        >
+                            Maximizing achievement and success
+                        </Typography>
+                    </li>
+                    <li>
+                        <Typography
+                            variant={"subtitle1"}
+                            color={"white"}
+                            align={isSmall ? "center" : "inherit"}
+                        >
+                            Substance abuse and Addiction
+                        </Typography>
+                    </li>
+                    <li>
+                        <Typography
+                            variant={"subtitle1"}
+                            color={"white"}
+                            align={isSmall ? "center" : "inherit"}
+                        >
+                            Depression
+                        </Typography>
+                    </li>
+                    <li>
+                        <Typography
+                            variant={"subtitle1"}
+                            color={"white"}
+                            align={isSmall ? "center" : "inherit"}
+                        >
+                            Anxiety, Post Traumatic Stress Disorder (PTSD), Stress Management
+                        </Typography>
+                    </li>
+                    <li>
+                        <Typography
+                            variant={"subtitle1"}
+                            color={"white"}
+                            align={isSmall ? "center" : "inherit"}
+                        >
+                            Grief and Loss
+                        </Typography>
+                    </li>
+                    <li>
+                        <Typography
+                            variant={"subtitle1"}
+                            color={"white"}
+                            align={isSmall ? "center" : "inherit"}
+                        >
+                            Trauma
+                        </Typography>
+                    </li>
+                    <li>
+                        <Typography
+                            variant={"subtitle1"}
+                            color={"white"}
+                            align={isSmall ? "center" : "inherit"}
+                        >
+                            Relationship issues.
+                        </Typography>
+                    </li>
+                </ul>
+                <Typography
+                    variant={"subtitle1"}
+                    color={"white"}
+                    sx={{ mt: 2, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    align={isSmall ? "center" : "inherit"}
+                >
+                    Raising 3 young children after the sudden loss of my husband enables me to
+                    deeply understand grief, loss and resilience, the fears and joys of single
+                    motherhood and fostering growth.
                 </Typography>
                 <Typography
                     variant={"subtitle1"}
                     color={"white"}
-                    sx={{ mt: 5, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    sx={{ mt: 2, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
                 >
                     Dr. Rosoff utilizes an active, eclectic and involved approach to therapy
                     including the use of: Cognitive Behavioral Therapy (CBT) Internal Family
-                    Systems, Mindfulness Based Stress Reduction techniques, Acceptance and
-                    Commitment Therapy, Recovery Principles including 12-Step Programs.
+                    Systems, Mindfulness Based Stress Reduction techniques, Recovery Principles
+                    including 12-Step Programs. Be it through lived experiences or extensive
+                    clinical training, I am here to connect and support health and wellbeing.
                 </Typography>
             </Box>
         </Box>

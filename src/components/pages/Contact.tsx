@@ -25,18 +25,19 @@ const Contact = () => {
                     Contact Me
                 </Typography>
                 <Typography
+                    variant={"h6"}
                     color={"white"}
                     mt={5}
-                    variant={"h6"}
+                    sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     fontWeight={600}
                     align={isSmall ? "center" : "inherit"}
                 >
-                    Billing
+                    Telehealth services provided.
                 </Typography>
                 <Typography
                     variant={"subtitle1"}
                     color={"white"}
-                    sx={{ mt: 1, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    sx={{ mt: 2, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
                 >
                     Initial Individual Session, our first 50 minutes: $200.00
@@ -60,21 +61,130 @@ const Contact = () => {
                 <Typography
                     variant={"subtitle1"}
                     color={"white"}
-                    sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    sx={{ mb: 2, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
                 >
-                    I do not accept insurance. I do accept cash or credit card. I can provide a
-                    superbill for you to submit to your insurance for reimbursement of
-                    out-of-network psychotherapy.
+                    I accept Venmo, Zelle, or credit card.
                 </Typography>
                 <Typography
                     variant={"subtitle1"}
                     color={"white"}
-                    sx={{ mt: 5, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    sx={{ mb: 2, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
                 >
-                    TELEHEALTH services provided. I hope to connect with you soon! Reach out via
-                    email with any questions!
+                    I accept the following insurance:
+                </Typography>
+                <table>
+                    <tr>
+                        <td>
+                            <Typography
+                                variant={"subtitle1"}
+                                color={"white"}
+                                align={isSmall ? "center" : "inherit"}
+                            >
+                                Aetna
+                            </Typography>
+                        </td>
+                        <td>
+                            <Typography
+                                variant={"subtitle1"}
+                                color={"white"}
+                                align={isSmall ? "center" : "inherit"}
+                            >
+                                Cigna
+                            </Typography>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <Typography
+                                variant={"subtitle1"}
+                                color={"white"}
+                                align={isSmall ? "center" : "inherit"}
+                            >
+                                Anthem Blue Cross California
+                            </Typography>
+                        </td>
+                        <td>
+                            <Typography
+                                variant={"subtitle1"}
+                                color={"white"}
+                                align={isSmall ? "center" : "inherit"}
+                            >
+                                Oscar Health
+                            </Typography>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <Typography
+                                variant={"subtitle1"}
+                                color={"white"}
+                                align={isSmall ? "center" : "inherit"}
+                            >
+                                Blue Shield of California
+                            </Typography>
+                        </td>
+                        <td>
+                            <Typography
+                                variant={"subtitle1"}
+                                color={"white"}
+                                align={isSmall ? "center" : "inherit"}
+                            >
+                                Oxford
+                            </Typography>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <Typography
+                                variant={"subtitle1"}
+                                color={"white"}
+                                align={isSmall ? "center" : "inherit"}
+                            >
+                                Blue Cross Blue Shield of Massachusetts
+                            </Typography>
+                        </td>
+                        <td>
+                            <Typography
+                                variant={"subtitle1"}
+                                color={"white"}
+                                align={isSmall ? "center" : "inherit"}
+                            >
+                                United Healthcare
+                            </Typography>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <Typography
+                                variant={"subtitle1"}
+                                color={"white"}
+                                align={isSmall ? "center" : "inherit"}
+                            >
+                                Carelon Behavioral Health
+                            </Typography>
+                        </td>
+                    </tr>
+                </table>
+                <Typography
+                    variant={"subtitle1"}
+                    color={"white"}
+                    sx={{ mt: 3, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    align={isSmall ? "center" : "inherit"}
+                >
+                    I can provide a superbill for you to submit to your insurance for reimbursement
+                    of out-of-network psychotherapy.
+                </Typography>
+                <Typography
+                    variant={"subtitle1"}
+                    color={"white"}
+                    sx={{ mt: 3, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    align={isSmall ? "center" : "inherit"}
+                >
+                    Reach out via phone or email with any questions and to schedule your 15 minute
+                    consultation to determine if we are a good fit. (complimentary) I look forward
+                    to connecting with you soon!
                 </Typography>
                 <Box mt={3} ml={-2}>
                     <Socials />
