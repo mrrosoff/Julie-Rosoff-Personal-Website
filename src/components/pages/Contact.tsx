@@ -10,8 +10,9 @@ const Contact = () => {
     return (
         <Box
             id={"contact"}
-            height={isSmall ? "100vh" : "95vh"}
-            p={4}
+            height={isSmall ? undefined : "95vh"}
+            p={isSmall ? 2 : 4}
+            mb={isSmall ? 2 : 0}
             display={"flex"}
             alignItems={isMedium ? "center" : "inherit"}
         >
@@ -63,97 +64,99 @@ const Contact = () => {
                     I accept the following insurance:
                 </Typography>
                 <table>
-                    <tr>
-                        <td>
-                            <Typography
-                                variant={"body2"}
-                                color={"white"}
-                                align={isSmall ? "center" : "inherit"}
-                            >
-                                Aetna
-                            </Typography>
-                        </td>
-                        <td>
-                            <Typography
-                                variant={"body2"}
-                                color={"white"}
-                                align={isSmall ? "center" : "inherit"}
-                            >
-                                Cigna
-                            </Typography>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <Typography
-                                variant={"body2"}
-                                color={"white"}
-                                align={isSmall ? "center" : "inherit"}
-                            >
-                                Anthem Blue Cross California
-                            </Typography>
-                        </td>
-                        <td>
-                            <Typography
-                                variant={"body2"}
-                                color={"white"}
-                                align={isSmall ? "center" : "inherit"}
-                            >
-                                Oscar Health
-                            </Typography>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <Typography
-                                variant={"body2"}
-                                color={"white"}
-                                align={isSmall ? "center" : "inherit"}
-                            >
-                                Blue Shield of California
-                            </Typography>
-                        </td>
-                        <td>
-                            <Typography
-                                variant={"body2"}
-                                color={"white"}
-                                align={isSmall ? "center" : "inherit"}
-                            >
-                                Oxford
-                            </Typography>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <Typography
-                                variant={"body2"}
-                                color={"white"}
-                                align={isSmall ? "center" : "inherit"}
-                            >
-                                Blue Cross Blue Shield of Massachusetts
-                            </Typography>
-                        </td>
-                        <td>
-                            <Typography
-                                variant={"body2"}
-                                color={"white"}
-                                align={isSmall ? "center" : "inherit"}
-                            >
-                                United Healthcare
-                            </Typography>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <Typography
-                                variant={"body2"}
-                                color={"white"}
-                                align={isSmall ? "center" : "inherit"}
-                            >
-                                Carelon Behavioral Health
-                            </Typography>
-                        </td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <Typography
+                                    variant={"body2"}
+                                    color={"white"}
+                                    align={isSmall ? "center" : "inherit"}
+                                >
+                                    Aetna
+                                </Typography>
+                            </td>
+                            <td>
+                                <Typography
+                                    variant={"body2"}
+                                    color={"white"}
+                                    align={isSmall ? "center" : "inherit"}
+                                >
+                                    Cigna
+                                </Typography>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <Typography
+                                    variant={"body2"}
+                                    color={"white"}
+                                    align={isSmall ? "center" : "inherit"}
+                                >
+                                    Anthem Blue Cross California
+                                </Typography>
+                            </td>
+                            <td>
+                                <Typography
+                                    variant={"body2"}
+                                    color={"white"}
+                                    align={isSmall ? "center" : "inherit"}
+                                >
+                                    Oscar Health
+                                </Typography>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <Typography
+                                    variant={"body2"}
+                                    color={"white"}
+                                    align={isSmall ? "center" : "inherit"}
+                                >
+                                    Blue Shield of California
+                                </Typography>
+                            </td>
+                            <td>
+                                <Typography
+                                    variant={"body2"}
+                                    color={"white"}
+                                    align={isSmall ? "center" : "inherit"}
+                                >
+                                    Oxford
+                                </Typography>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <Typography
+                                    variant={"body2"}
+                                    color={"white"}
+                                    align={isSmall ? "center" : "inherit"}
+                                >
+                                    Blue Cross Blue Shield of Massachusetts
+                                </Typography>
+                            </td>
+                            <td>
+                                <Typography
+                                    variant={"body2"}
+                                    color={"white"}
+                                    align={isSmall ? "center" : "inherit"}
+                                >
+                                    United Healthcare
+                                </Typography>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <Typography
+                                    variant={"body2"}
+                                    color={"white"}
+                                    align={isSmall ? "center" : "inherit"}
+                                >
+                                    Carelon Behavioral Health
+                                </Typography>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
                 <Typography
                     variant={"body1"}

@@ -8,7 +8,7 @@ const Home = () => {
     const isMedium = useMediaQuery(theme.breakpoints.down("md"));
 
     return (
-        <Box id={"home"} height={"100vh"} p={4} display={"flex"} alignItems={"center"}>
+        <Box id={"home"} height={"100vh"} p={isSmall ? 2 : 4} display={"flex"} alignItems={"center"}>
             <Box
                 ml={theme.spacing(isSmall ? 0 : 12)}
                 pt={isSmall ? "50vh" : "35vh"}

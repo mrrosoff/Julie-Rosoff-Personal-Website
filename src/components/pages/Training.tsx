@@ -8,8 +8,8 @@ const Training = () => {
     return (
         <Box
             id={"training"}
-            height={isSmall ? "280vh" : "150vh"}
-            p={4}
+            height={isSmall ? undefined : "150vh"}
+            p={isSmall ? 2 : 4}
             pt={8}
             display={"flex"}
             alignItems={isMedium ? "center" : "inherit"}

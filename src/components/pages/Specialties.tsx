@@ -8,8 +8,8 @@ const Specialties = () => {
     return (
         <Box
             id={"specialties"}
-            height={isSmall ? "150vh" : "95vh"}
-            p={4}
+            height={isSmall ? undefined : "95vh"}
+            p={isSmall ? 2 : 4}
             pt={8}
             display={"flex"}
             alignItems={isMedium ? "center" : "inherit"}
@@ -26,7 +26,12 @@ const Specialties = () => {
                 >
                     Dr. Rosoff specializes in treating individuals with the following issues:
                 </Typography>
-                <ul style={{ listStyleType: isSmall ? "none" : undefined }}>
+                <ul
+                    style={{
+                        marginLeft: isSmall ? -40 : 0,
+                        listStyleType: isSmall ? "none" : undefined
+                    }}
+                >
                     <li>
                         <Typography
                             variant={"body2"}

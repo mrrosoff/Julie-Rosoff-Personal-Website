@@ -8,8 +8,8 @@ const About = () => {
     return (
         <Box
             id={"about"}
-            height={"95vh"}
-            p={4}
+            height={isSmall ? undefined : "95vh"}
+            p={isSmall ? 2 : 4}
             pt={8}
             display={"flex"}
             alignItems={isMedium ? "center" : "inherit"}

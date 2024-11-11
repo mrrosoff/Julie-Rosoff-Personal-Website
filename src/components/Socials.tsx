@@ -27,7 +27,7 @@ const Socials = () => {
             justifyContent={isSmall ? "center" : "inherit"}
         >
             {socialList.map((socialDetails, index) => (
-                <Box key={index} mr={1}>
+                <Box key={index}>
                     <SocialButton href={socialDetails.url} icon={socialDetails.icon} />
                 </Box>
             ))}
