@@ -78,7 +78,7 @@ const Specialties = () => {
                             color={"white"}
                             align={isSmall ? "center" : "inherit"}
                         >
-                            Post Traumatic Stress Disorder, Stress Management
+                            Post Traumatic Stress Disorder
                         </Typography>
                     </li>
                     <li>
@@ -87,7 +87,25 @@ const Specialties = () => {
                             color={"white"}
                             align={isSmall ? "center" : "inherit"}
                         >
-                            Grief and Loss, Trauma
+                            Stress Management
+                        </Typography>
+                    </li>
+                    <li>
+                        <Typography
+                            variant={"body2"}
+                            color={"white"}
+                            align={isSmall ? "center" : "inherit"}
+                        >
+                            Grief and Loss
+                        </Typography>
+                    </li>
+                    <li>
+                        <Typography
+                            variant={"body2"}
+                            color={"white"}
+                            align={isSmall ? "center" : "inherit"}
+                        >
+                            Trauma Based Processing
                         </Typography>
                     </li>
                     <li>
@@ -100,16 +118,6 @@ const Specialties = () => {
                         </Typography>
                     </li>
                 </ul>
-                <Typography
-                    variant={"body1"}
-                    color={"white"}
-                    sx={{ mt: 2, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
-                    align={isSmall ? "center" : "inherit"}
-                >
-                    Raising 3 young children after the sudden loss of my husband enables me to
-                    deeply understand grief, loss and resilience, the fears and joys of single
-                    motherhood and fostering growth.
-                </Typography>
                 <Typography
                     variant={"body1"}
                     color={"white"}

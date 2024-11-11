@@ -33,7 +33,7 @@ const Layout = () => {
 
     const opacity = isSmall ? "0.5" : "0.75";
     const secondColor = `rgba(0,0,0,${opacity})`;
-    const percent = afterHome ? "0" : "70";
+    const percent = afterHome && isSmall ? "0" : "70";
 
     return (
         <Box width={"100vw"} height={"100vh"}>
