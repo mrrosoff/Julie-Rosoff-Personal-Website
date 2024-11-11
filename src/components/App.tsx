@@ -3,7 +3,6 @@ import { useMemo } from "react";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { createTheme, ThemeProvider, StyledEngineProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import { responsiveFontSizes } from "@mui/material";
 
 import Layout from "./Layout";
 
@@ -11,16 +10,14 @@ const App = () => {
     const darkMode = useMediaQuery("(prefers-color-scheme: dark)");
     const theme = useMemo(
         () =>
-            responsiveFontSizes(
-                createTheme({
-                    palette: {
-                        mode: darkMode ? "dark" : "light",
-                        primary: {
-                            main: "#FFFFFF"
-                        }
+            createTheme({
+                palette: {
+                    mode: darkMode ? "dark" : "light",
+                    primary: {
+                        main: "#FFFFFF"
                     }
-                })
-            ),
+                }
+            }),
         [darkMode]
     );
 
@@ -36,25 +33,28 @@ const App = () => {
             fontSize: "4rem",
             fontWeight: 600
         },
-        body1: {
-            [theme.breakpoints.up("xl")]: {
-                fontSize: "1.6rem"
+        subtitle1: {
+            [theme.breakpoints.up("lg")]: {
+                fontSize: "1.4rem"
             },
-            fontSize: "1rem",
-            fontWeight: 500
+            fontSize: "1.2rem"
         },
-        body2: {
-            [theme.breakpoints.up("xl")]: {
-                fontSize: "1.2rem"
-            },
-            fontSize: "1rem",
+        subtitle2: {
+            fontSize: "1.1rem",
             fontWeight: 600
         },
-        // subtitle1: {
-        //     [theme.breakpoints.up("lg")]: {
-        //         fontSize: "1.25rem"
-        //     }
-        // }
+        body1: {
+            [theme.breakpoints.up("lg")]: {
+                fontSize: "1.3rem"
+            },
+            fontSize: "1.2rem"
+        },
+        body2: {
+            [theme.breakpoints.up("lg")]: {
+                fontSize: "1.2rem"
+            },
+            fontSize: "1rem"
+        }
     };
 
     return (

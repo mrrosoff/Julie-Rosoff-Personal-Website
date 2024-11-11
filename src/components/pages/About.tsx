@@ -19,7 +19,7 @@ const About = () => {
                     About
                 </Typography>
                 <Typography
-                    variant={"subtitle1"}
+                    variant={"body1"}
                     color={"white"}
                     sx={{ mt: 5, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
@@ -32,9 +32,9 @@ const About = () => {
                     receive the highest level of care tailored to your unique needs.
                 </Typography>
                 <Typography
-                    variant={"subtitle1"}
+                    variant={"body1"}
                     color={"white"}
-                    sx={{ mt: 5, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    sx={{ mt: 4, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
                 >
                     Whether you're seeking support for anxiety, depression, relationship issues, or

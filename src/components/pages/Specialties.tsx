@@ -19,17 +19,17 @@ const Specialties = () => {
                     Specialties
                 </Typography>
                 <Typography
-                    variant={"subtitle1"}
+                    variant={"body1"}
                     color={"white"}
                     sx={{ mt: 5, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
                 >
-                    Dr. Rosoff specializes in treating young adults with the following issues:
+                    Dr. Rosoff specializes in treating individuals with the following issues:
                 </Typography>
-                <ul>
+                <ul style={{ listStyleType: isSmall ? "none" : undefined }}>
                     <li>
                         <Typography
-                            variant={"subtitle1"}
+                            variant={"body2"}
                             color={"white"}
                             align={isSmall ? "center" : "inherit"}
                         >
@@ -38,7 +38,7 @@ const Specialties = () => {
                     </li>
                     <li>
                         <Typography
-                            variant={"subtitle1"}
+                            variant={"body2"}
                             color={"white"}
                             align={isSmall ? "center" : "inherit"}
                         >
@@ -47,7 +47,7 @@ const Specialties = () => {
                     </li>
                     <li>
                         <Typography
-                            variant={"subtitle1"}
+                            variant={"body2"}
                             color={"white"}
                             align={isSmall ? "center" : "inherit"}
                         >
@@ -56,7 +56,7 @@ const Specialties = () => {
                     </li>
                     <li>
                         <Typography
-                            variant={"subtitle1"}
+                            variant={"body2"}
                             color={"white"}
                             align={isSmall ? "center" : "inherit"}
                         >
@@ -65,52 +65,43 @@ const Specialties = () => {
                     </li>
                     <li>
                         <Typography
-                            variant={"subtitle1"}
+                            variant={"body2"}
                             color={"white"}
                             align={isSmall ? "center" : "inherit"}
                         >
-                            Depression
+                            Depression and Anxiety
                         </Typography>
                     </li>
                     <li>
                         <Typography
-                            variant={"subtitle1"}
+                            variant={"body2"}
                             color={"white"}
                             align={isSmall ? "center" : "inherit"}
                         >
-                            Anxiety, Post Traumatic Stress Disorder (PTSD), Stress Management
+                            Post Traumatic Stress Disorder, Stress Management
                         </Typography>
                     </li>
                     <li>
                         <Typography
-                            variant={"subtitle1"}
+                            variant={"body2"}
                             color={"white"}
                             align={isSmall ? "center" : "inherit"}
                         >
-                            Grief and Loss
+                            Grief and Loss, Trauma
                         </Typography>
                     </li>
                     <li>
                         <Typography
-                            variant={"subtitle1"}
+                            variant={"body2"}
                             color={"white"}
                             align={isSmall ? "center" : "inherit"}
                         >
-                            Trauma
-                        </Typography>
-                    </li>
-                    <li>
-                        <Typography
-                            variant={"subtitle1"}
-                            color={"white"}
-                            align={isSmall ? "center" : "inherit"}
-                        >
-                            Relationship issues.
+                            Relationship Issues
                         </Typography>
                     </li>
                 </ul>
                 <Typography
-                    variant={"subtitle1"}
+                    variant={"body1"}
                     color={"white"}
                     sx={{ mt: 2, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
@@ -120,16 +111,16 @@ const Specialties = () => {
                     motherhood and fostering growth.
                 </Typography>
                 <Typography
-                    variant={"subtitle1"}
+                    variant={"body1"}
                     color={"white"}
                     sx={{ mt: 2, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
                 >
-                    Dr. Rosoff utilizes an active, eclectic and involved approach to therapy
-                    including the use of: Cognitive Behavioral Therapy (CBT) Internal Family
-                    Systems, Mindfulness Based Stress Reduction techniques, Recovery Principles
-                    including 12-Step Programs. Be it through lived experiences or extensive
-                    clinical training, I am here to connect and support health and wellbeing.
+                    Dr. Rosoff utilizes an active and involved approach to therapy including the use
+                    of: Cognitive Behavioral Therapy, Internal Family Systems, mindfulness based
+                    stress reduction techniques, and recovery principles including 12-Step programs.
+                    Be it through lived experiences or extensive clinical training, I am here to
+                    connect and support health and wellbeing.
                 </Typography>
             </Box>
         </Box>

@@ -11,7 +11,7 @@ const Home = () => {
         <Box id={"home"} height={"100vh"} p={4} display={"flex"} alignItems={"center"}>
             <Box
                 ml={theme.spacing(isSmall ? 0 : 12)}
-                pt={"35vh"}
+                pt={isSmall ? "50vh" : "35vh"}
                 display={"flex"}
                 flexDirection={"column"}
                 alignItems={isMedium ? "center" : "end"}
@@ -19,7 +19,7 @@ const Home = () => {
                 <Typography variant={"h1"} color={"white"} align={isMedium ? "center" : "inherit"}>
                     Julie Rosoff Ph.D.
                 </Typography>
-                <Typography variant={"subtitle1"} color={"white"} sx={{ mt: isMedium ? 1 : -0.8 }}>
+                <Typography variant={"body1"} color={"white"} sx={{ mt: isMedium ? 1 : -0.8 }}>
                     Your Path to Mental Wellness
                 </Typography>
                 {!isSmall && (

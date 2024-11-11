@@ -1,8 +1,4 @@
-import { useState } from "react";
-
-import { Box, Button, TextField, Typography, useMediaQuery, useTheme } from "@mui/material";
-
-import { DateTime } from "luxon";
+import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 
 import Socials from "../Socials";
 
@@ -14,9 +10,8 @@ const Contact = () => {
     return (
         <Box
             id={"contact"}
-            height={isSmall ? "120vh" : "95vh"}
+            height={isSmall ? "100vh" : "95vh"}
             p={4}
-            pt={8}
             display={"flex"}
             alignItems={isMedium ? "center" : "inherit"}
         >
@@ -25,49 +20,42 @@ const Contact = () => {
                     Contact Me
                 </Typography>
                 <Typography
-                    variant={"h6"}
+                    variant={"subtitle1"}
                     color={"white"}
                     mt={5}
                     sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     fontWeight={600}
                     align={isSmall ? "center" : "inherit"}
                 >
-                    Telehealth services provided.
+                    Telehealth Services Provided
                 </Typography>
                 <Typography
-                    variant={"subtitle1"}
+                    variant={"body1"}
                     color={"white"}
                     sx={{ mt: 2, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
                 >
-                    Initial Individual Session, our first 50 minutes: $200.00
+                    Initial Individual Session, our first 50 minutes: <b>$200.00</b>
                 </Typography>
                 <Typography
-                    variant={"subtitle1"}
+                    variant={"body1"}
                     color={"white"}
                     sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
                 >
-                    Individual 50 minute session: $150.00
+                    Individual 50 minute session: <b>$150.00</b>
                 </Typography>
                 <Typography
-                    variant={"subtitle1"}
-                    color={"white"}
-                    sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
-                    align={isSmall ? "center" : "inherit"}
-                >
-                    *If cost is a concern, please inquire for a reduced sliding scale fee.
-                </Typography>
-                <Typography
-                    variant={"subtitle1"}
+                    variant={"body1"}
                     color={"white"}
                     sx={{ mb: 2, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
                 >
-                    I accept Venmo, Zelle, or credit card.
+                    I accept Venmo, Zelle, or credit card. If cost is a concern, please inquire for
+                    a reduced fee.
                 </Typography>
                 <Typography
-                    variant={"subtitle1"}
+                    variant={"body1"}
                     color={"white"}
                     sx={{ mb: 2, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
@@ -78,7 +66,7 @@ const Contact = () => {
                     <tr>
                         <td>
                             <Typography
-                                variant={"subtitle1"}
+                                variant={"body2"}
                                 color={"white"}
                                 align={isSmall ? "center" : "inherit"}
                             >
@@ -87,7 +75,7 @@ const Contact = () => {
                         </td>
                         <td>
                             <Typography
-                                variant={"subtitle1"}
+                                variant={"body2"}
                                 color={"white"}
                                 align={isSmall ? "center" : "inherit"}
                             >
@@ -98,7 +86,7 @@ const Contact = () => {
                     <tr>
                         <td>
                             <Typography
-                                variant={"subtitle1"}
+                                variant={"body2"}
                                 color={"white"}
                                 align={isSmall ? "center" : "inherit"}
                             >
@@ -107,7 +95,7 @@ const Contact = () => {
                         </td>
                         <td>
                             <Typography
-                                variant={"subtitle1"}
+                                variant={"body2"}
                                 color={"white"}
                                 align={isSmall ? "center" : "inherit"}
                             >
@@ -118,7 +106,7 @@ const Contact = () => {
                     <tr>
                         <td>
                             <Typography
-                                variant={"subtitle1"}
+                                variant={"body2"}
                                 color={"white"}
                                 align={isSmall ? "center" : "inherit"}
                             >
@@ -127,7 +115,7 @@ const Contact = () => {
                         </td>
                         <td>
                             <Typography
-                                variant={"subtitle1"}
+                                variant={"body2"}
                                 color={"white"}
                                 align={isSmall ? "center" : "inherit"}
                             >
@@ -138,7 +126,7 @@ const Contact = () => {
                     <tr>
                         <td>
                             <Typography
-                                variant={"subtitle1"}
+                                variant={"body2"}
                                 color={"white"}
                                 align={isSmall ? "center" : "inherit"}
                             >
@@ -147,7 +135,7 @@ const Contact = () => {
                         </td>
                         <td>
                             <Typography
-                                variant={"subtitle1"}
+                                variant={"body2"}
                                 color={"white"}
                                 align={isSmall ? "center" : "inherit"}
                             >
@@ -158,7 +146,7 @@ const Contact = () => {
                     <tr>
                         <td>
                             <Typography
-                                variant={"subtitle1"}
+                                variant={"body2"}
                                 color={"white"}
                                 align={isSmall ? "center" : "inherit"}
                             >
@@ -168,7 +156,7 @@ const Contact = () => {
                     </tr>
                 </table>
                 <Typography
-                    variant={"subtitle1"}
+                    variant={"body1"}
                     color={"white"}
                     sx={{ mt: 3, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
@@ -177,13 +165,13 @@ const Contact = () => {
                     of out-of-network psychotherapy.
                 </Typography>
                 <Typography
-                    variant={"subtitle1"}
+                    variant={"body1"}
                     color={"white"}
                     sx={{ mt: 3, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
                 >
                     Reach out via phone or email with any questions and to schedule your 15 minute
-                    consultation to determine if we are a good fit. (complimentary) I look forward
+                    consultation to determine if we are a good fit (complimentary). I look forward
                     to connecting with you soon!
                 </Typography>
                 <Box mt={3} ml={-2}>

@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 import { Box, Button, Typography, useMediaQuery, useTheme } from "@mui/material";
 
@@ -17,13 +17,29 @@ const Layout = () => {
 
     const image = isSmall ? portrait : hero;
 
+    const [offset, setOffset] = useState(0);
+
+    useEffect(() => {
+        const item = document.getElementById("content");
+        if (!item) return;
+
+        const onScroll = () => setOffset(item.scrollTop);
+        item.addEventListener("scroll", onScroll);
+        return () => item.removeEventListener("scroll", onScroll);
+    }, []);
+
+    const item = document.getElementById("content");
+    const afterHome = item ? item.offsetHeight < offset : false;
+
+    const opacity = isSmall ? "0.5" : "0.75";
+    const secondColor = `rgba(0,0,0,${opacity})`;
+    const percent = afterHome ? "0" : "70";
+
     return (
         <Box width={"100vw"} height={"100vh"}>
             <div
                 style={{
-                    backgroundImage: `linear-gradient(285deg, transparent, rgba(0,0,0,${
-                        isSmall ? "0.5" : "0.75"
-                    }) 70%, black), url(${image})`,
+                    backgroundImage: `linear-gradient(285deg, transparent, ${secondColor} ${percent}%, black), url(${image})`,
                     height: "100vh",
                     minHeight: "100%",
                     backgroundPosition: "top",
@@ -34,6 +50,7 @@ const Layout = () => {
             />
             {isSmall ? null : <NavBar />}
             <Box
+                id={"content"}
                 position={"absolute"}
                 top={0}
                 left={0}
@@ -84,7 +101,7 @@ const NavBarButton = (props: { text: string; path: string }) => {
 
     return (
         <Button onClick={onClick} sx={{ p: 1, pl: 2, pr: 2, ml: 1 }}>
-            <Typography variant={"body2"} color={"white"}>
+            <Typography variant={"subtitle2"} color={"white"}>
                 {props.text}
             </Typography>
         </Button>

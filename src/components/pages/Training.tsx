@@ -20,7 +20,7 @@ const Training = () => {
                 </Typography>
                 <Typography
                     mt={5}
-                    variant={"h6"}
+                    variant={"subtitle1"}
                     fontWeight={600}
                     color={"white"}
                     sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
@@ -29,7 +29,8 @@ const Training = () => {
                     Licensure
                 </Typography>
                 <Typography
-                    variant={"subtitle1"}
+                    mt={1}
+                    variant={"body1"}
                     color={"white"}
                     sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
@@ -37,7 +38,8 @@ const Training = () => {
                     California Board of Psychology License: PSY15894, first licensed 1998
                 </Typography>
                 <Typography
-                    variant={"h6"}
+                    mt={1}
+                    variant={"subtitle1"}
                     fontWeight={600}
                     color={"white"}
                     sx={{ mt: 3, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
@@ -46,7 +48,8 @@ const Training = () => {
                     Education
                 </Typography>
                 <Typography
-                    variant={"subtitle1"}
+                    mt={1}
+                    variant={"body1"}
                     color={"white"}
                     sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
@@ -56,7 +59,8 @@ const Training = () => {
                     American Psychological Association
                 </Typography>
                 <Typography
-                    variant={"subtitle1"}
+                    mt={1}
+                    variant={"body1"}
                     color={"white"}
                     sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
@@ -65,7 +69,8 @@ const Training = () => {
                     Diego 1991 Approved by the American Psychological Association
                 </Typography>
                 <Typography
-                    variant={"subtitle1"}
+                    mt={1}
+                    variant={"body1"}
                     color={"white"}
                     sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
@@ -74,16 +79,18 @@ const Training = () => {
                     California 1988
                 </Typography>
                 <Typography
-                    variant={"h6"}
+                    mt={3}
+                    variant={"subtitle1"}
                     fontWeight={600}
                     color={"white"}
-                    sx={{ mt: 3, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
                 >
                     Professional Training
                 </Typography>
                 <Typography
-                    variant={"subtitle1"}
+                    mt={1}
+                    variant={"body1"}
                     color={"white"}
                     sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
@@ -93,7 +100,8 @@ const Training = () => {
                     American Psychological Association
                 </Typography>
                 <Typography
-                    variant={"subtitle1"}
+                    mt={1}
+                    variant={"body1"}
                     color={"white"}
                     sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
@@ -101,7 +109,8 @@ const Training = () => {
                     Internship: Alvarado Parkway Institute, La Mesa
                 </Typography>
                 <Typography
-                    variant={"subtitle1"}
+                    mt={1}
+                    variant={"body1"}
                     color={"white"}
                     sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
@@ -110,7 +119,8 @@ const Training = () => {
                     Diego
                 </Typography>
                 <Typography
-                    variant={"subtitle1"}
+                    mt={1}
+                    variant={"body1"}
                     color={"white"}
                     sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
@@ -119,16 +129,18 @@ const Training = () => {
                     San Diego
                 </Typography>
                 <Typography
-                    variant={"h6"}
+                    mt={3}
+                    variant={"subtitle1"}
                     fontWeight={600}
                     color={"white"}
-                    sx={{ mt: 3, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
                 >
                     Professional Affiliations
                 </Typography>
                 <Typography
-                    variant={"subtitle1"}
+                    mt={1}
+                    variant={"body1"}
                     color={"white"}
                     sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
@@ -136,16 +148,18 @@ const Training = () => {
                     San Diego Psychological Association
                 </Typography>
                 <Typography
-                    variant={"h6"}
+                    mt={3}
+                    variant={"subtitle1"}
                     fontWeight={600}
                     color={"white"}
-                    sx={{ mt: 3, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
                 >
                     Adopt a Family Foundation Committee Member
                 </Typography>
                 <Typography
-                    variant={"subtitle1"}
+                    mt={1}
+                    variant={"body1"}
                     color={"white"}
                     sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
@@ -154,16 +168,18 @@ const Training = () => {
                     services for victims of terror in Israel
                 </Typography>
                 <Typography
-                    variant={"h6"}
+                    mt={3}
+                    variant={"subtitle1"}
                     fontWeight={600}
                     color={"white"}
-                    sx={{ mt: 3, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
+                    sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
                 >
                     Interests
                 </Typography>
                 <Typography
-                    variant={"subtitle1"}
+                    mt={1}
+                    variant={"body1"}
                     color={"white"}
                     sx={{ maxWidth: theme.spacing(isMedium ? 60 : 80) }}
                     align={isSmall ? "center" : "inherit"}
