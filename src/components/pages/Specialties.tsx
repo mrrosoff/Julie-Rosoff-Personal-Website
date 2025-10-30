@@ -7,127 +7,157 @@ const Specialties = () => {
 
     return (
         <Box
+            component="section"
             id={"specialties"}
-            height={isSmall ? undefined : "95vh"}
+            minHeight={isSmall ? undefined : "95vh"}
             p={isSmall ? 2 : 4}
             pt={8}
+            pb={8}
             display={"flex"}
             alignItems={isMedium ? "center" : "inherit"}
+            aria-label="Specialties section"
         >
             <Box ml={isSmall ? 0 : 5} display={"flex"} flexDirection={"column"}>
-                <Typography variant={"h1"} color={"white"} align={isSmall ? "center" : "inherit"}>
+                <Typography
+                    component="h2"
+                    variant={"h1"}
+                    color={"white"}
+                    align={isSmall ? "center" : "inherit"}
+                >
                     Specialties
                 </Typography>
                 <Typography
                     variant={"body1"}
                     color={"white"}
-                    sx={{ mt: 5, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
-                    align={isSmall ? "center" : "inherit"}
+                    sx={{
+                        mt: 5,
+                        maxWidth: theme.spacing(isMedium ? 60 : 80),
+                        lineHeight: 1.8,
+                        letterSpacing: "0.01em",
+                        mb: 2
+                    }}
+                    align={isSmall ? "center" : "justify"}
                 >
                     Dr. Rosoff specializes in treating individuals with the following issues:
                 </Typography>
                 <ul
                     style={{
-                        marginLeft: isSmall ? -40 : 0,
-                        listStyleType: isSmall ? "none" : undefined
+                        listStyleType: "none",
+                        paddingLeft: isSmall ? 0 : 20,
+                        lineHeight: 2.2
                     }}
                 >
                     <li>
                         <Typography
                             variant={"body2"}
                             color={"white"}
-                            align={isSmall ? "center" : "inherit"}
+                            align={isSmall ? "center" : "left"}
+                            sx={{ lineHeight: 1.9, letterSpacing: "0.01em" }}
                         >
-                            Developmental transitions throughout the lifespan
+                            {isSmall ? "" : "• "}Developmental transitions throughout the lifespan
                         </Typography>
                     </li>
                     <li>
                         <Typography
                             variant={"body2"}
                             color={"white"}
-                            align={isSmall ? "center" : "inherit"}
+                            align={isSmall ? "center" : "left"}
+                            sx={{ lineHeight: 1.9, letterSpacing: "0.01em" }}
                         >
-                            Adjustment to college and adulthood
+                            {isSmall ? "" : "• "}Adjustment to college and adulthood
                         </Typography>
                     </li>
                     <li>
                         <Typography
                             variant={"body2"}
                             color={"white"}
-                            align={isSmall ? "center" : "inherit"}
+                            align={isSmall ? "center" : "left"}
+                            sx={{ lineHeight: 1.9, letterSpacing: "0.01em" }}
                         >
-                            Maximizing achievement and success
+                            {isSmall ? "" : "• "}Maximizing achievement and success
                         </Typography>
                     </li>
                     <li>
                         <Typography
                             variant={"body2"}
                             color={"white"}
-                            align={isSmall ? "center" : "inherit"}
+                            align={isSmall ? "center" : "left"}
+                            sx={{ lineHeight: 1.9, letterSpacing: "0.01em" }}
                         >
-                            Substance abuse and Addiction
+                            {isSmall ? "" : "• "}Substance abuse and Addiction
                         </Typography>
                     </li>
                     <li>
                         <Typography
                             variant={"body2"}
                             color={"white"}
-                            align={isSmall ? "center" : "inherit"}
+                            align={isSmall ? "center" : "left"}
+                            sx={{ lineHeight: 1.9, letterSpacing: "0.01em" }}
                         >
-                            Depression and Anxiety
+                            {isSmall ? "" : "• "}Depression and Anxiety
                         </Typography>
                     </li>
                     <li>
                         <Typography
                             variant={"body2"}
                             color={"white"}
-                            align={isSmall ? "center" : "inherit"}
+                            align={isSmall ? "center" : "left"}
+                            sx={{ lineHeight: 1.9, letterSpacing: "0.01em" }}
                         >
-                            Post Traumatic Stress Disorder
+                            {isSmall ? "" : "• "}Post Traumatic Stress Disorder
                         </Typography>
                     </li>
                     <li>
                         <Typography
                             variant={"body2"}
                             color={"white"}
-                            align={isSmall ? "center" : "inherit"}
+                            align={isSmall ? "center" : "left"}
+                            sx={{ lineHeight: 1.9, letterSpacing: "0.01em" }}
                         >
-                            Stress Management
+                            {isSmall ? "" : "• "}Stress Management
                         </Typography>
                     </li>
                     <li>
                         <Typography
                             variant={"body2"}
                             color={"white"}
-                            align={isSmall ? "center" : "inherit"}
+                            align={isSmall ? "center" : "left"}
+                            sx={{ lineHeight: 1.9, letterSpacing: "0.01em" }}
                         >
-                            Grief and Loss
+                            {isSmall ? "" : "• "}Grief and Loss
                         </Typography>
                     </li>
                     <li>
                         <Typography
                             variant={"body2"}
                             color={"white"}
-                            align={isSmall ? "center" : "inherit"}
+                            align={isSmall ? "center" : "left"}
+                            sx={{ lineHeight: 1.9, letterSpacing: "0.01em" }}
                         >
-                            Trauma Based Processing
+                            {isSmall ? "" : "• "}Trauma Based Processing
                         </Typography>
                     </li>
                     <li>
                         <Typography
                             variant={"body2"}
                             color={"white"}
-                            align={isSmall ? "center" : "inherit"}
+                            align={isSmall ? "center" : "left"}
+                            sx={{ lineHeight: 1.9, letterSpacing: "0.01em" }}
                         >
-                            Relationship Issues
+                            {isSmall ? "" : "• "}Relationship Issues
                         </Typography>
                     </li>
                 </ul>
                 <Typography
                     variant={"body1"}
                     color={"white"}
-                    sx={{ mt: 2, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
-                    align={isSmall ? "center" : "inherit"}
+                    sx={{
+                        mt: 3,
+                        maxWidth: theme.spacing(isMedium ? 60 : 80),
+                        lineHeight: 1.8,
+                        letterSpacing: "0.01em"
+                    }}
+                    align={isSmall ? "center" : "justify"}
                 >
                     Dr. Rosoff utilizes an active and involved approach to therapy including the use
                     of: Cognitive Behavioral Therapy, Internal Family Systems, mindfulness based

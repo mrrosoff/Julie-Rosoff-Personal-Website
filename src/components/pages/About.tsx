@@ -7,22 +7,35 @@ const About = () => {
 
     return (
         <Box
+            component="section"
             id={"about"}
-            height={isSmall ? undefined : "95vh"}
+            minHeight={isSmall ? undefined : "95vh"}
             p={isSmall ? 2 : 4}
             pt={8}
+            pb={8}
             display={"flex"}
             alignItems={isMedium ? "center" : "inherit"}
+            aria-label="About section"
         >
             <Box ml={isSmall ? 0 : 5} display={"flex"} flexDirection={"column"}>
-                <Typography variant={"h1"} color={"white"} align={isSmall ? "center" : "inherit"}>
+                <Typography
+                    component="h2"
+                    variant={"h1"}
+                    color={"white"}
+                    align={isSmall ? "center" : "inherit"}
+                >
                     About
                 </Typography>
                 <Typography
                     variant={"body1"}
                     color={"white"}
-                    sx={{ mt: 5, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
-                    align={isSmall ? "center" : "inherit"}
+                    sx={{
+                        mt: 5,
+                        maxWidth: theme.spacing(isMedium ? 60 : 80),
+                        lineHeight: 1.8,
+                        letterSpacing: "0.01em"
+                    }}
+                    align={isSmall ? "center" : "justify"}
                 >
                     I'm a dedicated and compassionate clinical psychologist committed to guiding you
                     on a journey toward mental well-being. With over 30 years of experience and a
@@ -34,8 +47,13 @@ const About = () => {
                 <Typography
                     variant={"body1"}
                     color={"white"}
-                    sx={{ mt: 4, maxWidth: theme.spacing(isMedium ? 60 : 80) }}
-                    align={isSmall ? "center" : "inherit"}
+                    sx={{
+                        mt: 3,
+                        maxWidth: theme.spacing(isMedium ? 60 : 80),
+                        lineHeight: 1.8,
+                        letterSpacing: "0.01em"
+                    }}
+                    align={isSmall ? "center" : "justify"}
                 >
                     Whether you're seeking support for anxiety, depression, relationship issues, or
                     personal self-development, I am here to collaborate with you, providing the

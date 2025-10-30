@@ -31,9 +31,39 @@ const Layout = () => {
     const item = document.getElementById("content");
     const afterHome = item ? item.offsetHeight < offset : false;
 
-    const opacity = isSmall ? "0.5" : "0.75";
+    // Calculate smooth opacity and gradient transition for mobile
+    const calculateMobileOpacity = () => {
+        if (!isSmall) return "0.75";
+        if (!item) return "0.5";
+
+        const viewportHeight = item.offsetHeight;
+        // Transition completes quickly (at 0.5 viewport), then stays constant
+        const scrollProgress = Math.min(offset / (viewportHeight * 0.5), 1);
+        const opacityValue = 0.5 + (scrollProgress * 0.15); // Transition from 0.5 to 0.65, then stays at 0.65
+        return opacityValue.toFixed(2);
+    };
+
+    const calculateGradientPercent = () => {
+        if (!isSmall) return "70";
+        if (!item) return "70";
+
+        const viewportHeight = item.offsetHeight;
+        // Start transitioning gradient at 0.5 viewport, complete by 1 viewport
+        if (offset < viewportHeight * 0.5) {
+            return "70";
+        } else if (offset < viewportHeight) {
+            // Smooth transition from 70 to 0 over the second half of first viewport
+            const transitionProgress = (offset - viewportHeight * 0.5) / (viewportHeight * 0.5);
+            const percentValue = 70 - (transitionProgress * 70);
+            return Math.round(percentValue).toString();
+        } else {
+            return "0";
+        }
+    };
+
+    const opacity = calculateMobileOpacity();
     const secondColor = `rgba(0,0,0,${opacity})`;
-    const percent = afterHome && isSmall ? "0" : "70";
+    const percent = calculateGradientPercent();
 
     return (
         <Box width={"100vw"} height={"100vh"}>
@@ -45,7 +75,8 @@ const Layout = () => {
                     backgroundPosition: "top",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
-                    position: "relative"
+                    position: "relative",
+                    transition: "background-image 0.3s ease-in-out"
                 }}
             />
             {isSmall ? null : <NavBar />}
@@ -74,6 +105,9 @@ const Layout = () => {
 const NavBar = () => {
     return (
         <Box
+            component="nav"
+            role="navigation"
+            aria-label="Main navigation"
             position={"absolute"}
             top={0}
             left={0}
@@ -97,10 +131,14 @@ const NavBarButton = (props: { text: string; path: string }) => {
     const onClick = useCallback(() => {
         const element = document.getElementById(props.path);
         element?.scrollIntoView({ behavior: "smooth" });
-    }, [document]);
+    }, [props.path]);
 
     return (
-        <Button onClick={onClick} sx={{ p: 1, pl: 2, pr: 2, ml: 1 }}>
+        <Button
+            onClick={onClick}
+            sx={{ p: 1, pl: 2, pr: 2, ml: 1 }}
+            aria-label={`Navigate to ${props.text} section`}
+        >
             <Typography variant={"subtitle2"} color={"white"}>
                 {props.text}
             </Typography>

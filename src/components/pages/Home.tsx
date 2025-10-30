@@ -8,7 +8,15 @@ const Home = () => {
     const isMedium = useMediaQuery(theme.breakpoints.down("md"));
 
     return (
-        <Box id={"home"} height={"100vh"} p={isSmall ? 2 : 4} display={"flex"} alignItems={"center"}>
+        <Box
+            component="section"
+            id={"home"}
+            height={"100vh"}
+            p={isSmall ? 2 : 4}
+            display={"flex"}
+            alignItems={"center"}
+            aria-label="Home section"
+        >
             <Box
                 ml={theme.spacing(isSmall ? 0 : 12)}
                 pt={isSmall ? "50vh" : "35vh"}
@@ -16,10 +24,20 @@ const Home = () => {
                 flexDirection={"column"}
                 alignItems={isMedium ? "center" : "end"}
             >
-                <Typography variant={"h1"} color={"white"} align={isMedium ? "center" : "inherit"}>
+                <Typography
+                    component="h1"
+                    variant={"h1"}
+                    color={"white"}
+                    align={isMedium ? "center" : "inherit"}
+                >
                     Julie Rosoff Ph.D.
                 </Typography>
-                <Typography variant={"body1"} color={"white"} sx={{ mt: isMedium ? 1 : -0.8 }}>
+                <Typography
+                    component="p"
+                    variant={"body1"}
+                    color={"white"}
+                    sx={{ mt: isMedium ? 1 : -0.8 }}
+                >
                     Your Path to Mental Wellness
                 </Typography>
                 {!isSmall && (
