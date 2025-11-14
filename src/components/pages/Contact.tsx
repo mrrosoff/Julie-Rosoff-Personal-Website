@@ -50,7 +50,7 @@ const Contact = () => {
                     }}
                     align={isSmall ? "center" : "inherit"}
                 >
-                    Initial Individual Session, our first 50 minutes: <b>$200.00</b>
+                    Initial Individual Session, our first 50 minutes: <b>$250.00</b>
                 </Typography>
                 <Typography
                     variant={"body1"}
@@ -62,7 +62,7 @@ const Contact = () => {
                     }}
                     align={isSmall ? "center" : "inherit"}
                 >
-                    Individual 50 minute session: <b>$150.00</b>
+                    Individual 50 minute session: <b>$200.00</b>
                 </Typography>
                 <Typography
                     variant={"body1"}
