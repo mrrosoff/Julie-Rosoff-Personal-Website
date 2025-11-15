@@ -63,12 +63,8 @@ const App = () => {
             <ThemeProvider theme={theme}>
                 <CssBaseline />
                 <BrowserRouter>
-                    <Route path="/">
-                        <Layout />
-                    </Route>
-                    <Route path="*">
-                        <Navigate to="/" replace />
-                    </Route>
+                    <Route path="/" element={<Layout />} />
+                    <Route path="*" element={<Navigate to="/" replace />} />
                 </BrowserRouter>
             </ThemeProvider>
         </StyledEngineProvider>
