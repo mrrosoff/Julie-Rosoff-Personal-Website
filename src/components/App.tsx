@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import { BrowserRouter, Navigate, Route } from "react-router-dom";
 
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { createTheme, ThemeProvider, StyledEngineProvider } from "@mui/material/styles";
@@ -61,7 +62,14 @@ const App = () => {
         <StyledEngineProvider injectFirst>
             <ThemeProvider theme={theme}>
                 <CssBaseline />
-                <Layout />
+                <BrowserRouter>
+                    <Route path="/">
+                        <Layout />
+                    </Route>
+                    <Route path="*">
+                        <Navigate to="/" replace />
+                    </Route>
+                </BrowserRouter>
             </ThemeProvider>
         </StyledEngineProvider>
     );
