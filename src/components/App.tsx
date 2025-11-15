@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { BrowserRouter, Navigate, Route } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { createTheme, ThemeProvider, StyledEngineProvider } from "@mui/material/styles";
@@ -63,8 +63,10 @@ const App = () => {
             <ThemeProvider theme={theme}>
                 <CssBaseline />
                 <BrowserRouter>
-                    <Route path="/" element={<Layout />} />
-                    <Route path="*" element={<Navigate to="/" replace />} />
+                    <Routes>
+                        <Route path="/" element={<Layout />} />
+                        <Route path="*" element={<Navigate to="/" replace />} />
+                    </Routes>
                 </BrowserRouter>
             </ThemeProvider>
         </StyledEngineProvider>
